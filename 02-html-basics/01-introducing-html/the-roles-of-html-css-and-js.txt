@@ -1,0 +1,5 @@
+The Roles of HTML, CSS and JavaScript
+
+HTML	= the content on a page
+CSS	= styles applied to the page content
+JS	= behavior or action of the page's contents
