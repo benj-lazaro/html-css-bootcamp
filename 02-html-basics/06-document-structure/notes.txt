@@ -1,0 +1,13 @@
+Document Structure
+------------------
+- Basic HTML boilerplate code:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>My Document</title>
+</head>
+<body>
+    <!-- content goes -->
+</body>
+</html>
