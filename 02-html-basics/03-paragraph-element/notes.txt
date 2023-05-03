@@ -1,0 +1,10 @@
+Paragraph Element
+-----------------
+- Wraps content between <p> </p>
+- Formats content into a paragraph
+
+
+Syntax:
+
+<p> content </p>
+
