@@ -1,0 +1,10 @@
+HTML
+----
+- It is a markup language.
+- Takes a regular text and mark it up to give it structure.
+    - Headings
+    - Links
+    - Supertext
+    - Paragraph of text
+    - Bold text
+    - Footer
