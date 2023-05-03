@@ -1,0 +1,4 @@
+Basic HTML Workflow
+-------------------
+- Write HTML and save changes in a file (with .html extension)
+- Render the HTML file in the browser (Google Chrome)
