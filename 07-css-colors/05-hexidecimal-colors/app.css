@@ -1,0 +1,27 @@
+/* CSS Hexidecimal colors */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color) */
+/* A Hexidecimal representation of RGB colors = #<red><green><blue> */
+/* A compact way of defining colors */
+
+body {
+  background-color: #014f87;
+}
+
+p {
+  color: magenta;
+}
+
+a {
+  color: cyan;
+  background-color: magenta;
+}
+
+h2 {
+  color: orangered;
+  background-color: olive;
+}
+
+h1 {
+  color: teal;
+  background-color: yellow;
+}
