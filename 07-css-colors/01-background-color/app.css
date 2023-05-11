@@ -1,0 +1,19 @@
+p {
+  color: red;
+}
+
+a {
+  color: cyan;
+  /* background-color changes the background color of an element */
+  background-color: magenta;
+}
+
+h2 {
+  color: magenta;
+}
+
+h1 {
+  color: teal;
+  /* background-color changes the background color of an element */
+  background-color: yellow;
+}
