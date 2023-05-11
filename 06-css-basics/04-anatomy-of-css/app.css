@@ -1,0 +1,13 @@
+/* CSS Anatomy */
+
+/* 
+
+selector {
+    lowercase_property_name: value;
+}
+
+*/
+
+p {
+  color: coral;
+}
