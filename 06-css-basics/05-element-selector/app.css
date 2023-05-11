@@ -1,0 +1,17 @@
+/* The element selector targets the tag name of an HTML element to be styled */
+
+a {
+    color: teal;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+h2 {
+    color: magenta;
+}
+
+p {
+    color: coral;
+}
