@@ -1,0 +1,21 @@
+/* CSS named colors recognizes 140+ pre-defined colors */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) */
+
+p {
+  color: purple;
+}
+
+a {
+  color: cyan;
+  background-color: magenta;
+}
+
+h2 {
+  color: orangered;
+  background-color: olive;
+}
+
+h1 {
+  color: teal;
+  background-color: yellow;
+}
