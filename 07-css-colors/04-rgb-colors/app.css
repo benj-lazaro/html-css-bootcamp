@@ -1,0 +1,26 @@
+/* CSS RGB colors recognizes 16M colors */
+/* 255 of Red, 255 of Green and 255 of Blue */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb) */
+
+body {
+  /* Red of 123, Green of 2, and Blue of 194 */
+  background-color: rgb(123, 2, 194);
+}
+p {
+  color: magenta;
+}
+
+a {
+  color: cyan;
+  background-color: magenta;
+}
+
+h2 {
+  color: orangered;
+  background-color: olive;
+}
+
+h1 {
+  color: teal;
+  background-color: yellow;
+}
