@@ -1,0 +1,21 @@
+/* CSS RGBA colors and opacity */
+/* Alpha channel (transparency) value ranges from 0 (0.000) to 1 */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb) */
+
+body {
+  background-color: yellow;
+}
+
+h2 {
+  background-color: rgba(212, 0, 255, 0.279);
+}
+
+h1 {
+  background-color: rgb(0, 255, 255);
+  /* 'opacity' property sets the opacity of an element */
+  /* It is the degree to which content behind an element is hidden; the opposite of transparency */
+  /* Opacity value ranges from 0 (0.0) to 1 or 0 to 100% */
+  /* Affects the entire element including the content */
+  /* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) */
+  opacity: 0.5;
+}
