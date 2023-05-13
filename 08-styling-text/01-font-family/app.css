@@ -1,0 +1,14 @@
+/* font-family (https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) */
+
+/* CSS Font Stack (https://www.cssfontstack.com/) */
+
+h1 {
+  /* 'font-family' specifies the prioritized list of 1 or more font family names for the selected element */
+  /* fonts are inherited */
+  font-family: "Segoe UI", Futura, sans-serif;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
