@@ -1,0 +1,20 @@
+/* CSS inheritance */
+
+/* Some properties inherit values from a parent element if NO value is specified */
+/* Other properties are NOT inherited but have default initial values */
+
+/* NOTE: To check if an element's property can be inherited, look at the MDN documentation */
+/*       of target element, see "Formal Definition" section at check for the field 'Inherited' */
+/*       A 'No' means that the element's children will not inherit the defined property */
+
+div {
+  color: red;
+  /* The property 'border' can NOT be inherited by the parent element's children */
+  border: 1px solid blue;
+}
+
+p {
+  /* The value 'inherit' enables a child element to inherit a property of its parent element */
+  /* The property 'border' inherits the parent element's 'border' property */
+  border: inherit;
+}
