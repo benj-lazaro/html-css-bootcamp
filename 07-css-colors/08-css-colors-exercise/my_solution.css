@@ -1,0 +1,36 @@
+/* CSS Color Example Exercise */
+/* URL (https://codepen.io/Colt/pen/BaPVGKa) */
+
+/* My solution */
+
+/* Make the text of an <h1> element red using rgb */
+h1 {
+  color: rgb(255, 0, 0);
+}
+
+/* Make the text of an <h2> element blue using rgb */
+h2 {
+  color: rgb(0, 0, 255);
+}
+
+/* Make the text of an <h3> element blue using hexidecimal */
+h3 {
+  color: #00FF00;
+  /* color: #0f0; */
+}
+
+/* Make the background color of the button black using rgb */
+button {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Make the background color of a <p> element blue using rgb with 50% transparency */
+p {
+  background-color: rgb(0, 0, 255, 0.5);
+}
+
+/* Make the background color of a <div> element orange using hexidecimal with 50% opacity */
+div {
+  background-color: #ff6347;
+  opacity: 50%;
+}
