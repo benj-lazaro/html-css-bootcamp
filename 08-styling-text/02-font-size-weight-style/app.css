@@ -1,0 +1,32 @@
+/* font-size property sets the size of the font */
+/* font-size is inherited */
+/* Changing the font size also updates the sizes of the font size-relative units (e.g. em, ex) */
+
+
+/* font-weight property sets the boldness of the font */
+/* weights avaialble DEPEND ON the font-family that is currently set */
+/* keyword values: normal, bold */
+/* keyword values relative to the parent: lighter, bolder */
+/* numeric keyword values: 100, 400 (normal), 700 (bold) to 900 */
+
+/* font-style property sets a font to be styled with normal, italic of oblique face */
+/* from its font-family property */
+
+h1 {
+  font-family: "Segoe UI", Futura, sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-weight: bold;
+}
+
+a {
+  font-style: italic;
+}
