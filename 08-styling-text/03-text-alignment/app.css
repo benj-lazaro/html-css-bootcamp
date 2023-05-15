@@ -1,0 +1,28 @@
+/* text-align sets the horizontal alignment of the inline-level content inside a block element */
+/* It works like vertical-align but in the horizontal direction */
+/* It is inheritable */
+
+/* text-align values: start (left), end (right), center, justify */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) */
+
+h1 {
+  font-family: "Segoe UI", Futura, sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+p {
+  font-weight: bold;
+}
+
+a {
+  font-style: italic;
+}
