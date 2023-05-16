@@ -1,0 +1,20 @@
+/* Google fonts added via CSS */
+
+/* NOT needed if it has already been declared in HTML */
+/* @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400;900&display=swap"); */
+
+/* NOTE: See the 'CSS rules to specify families' section of Google fonts */
+/*       This provides alternative fonts in the event of an internet/network interruption */
+/*       and unable to download Google fonts on the fly */
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "Indie Flower", cursive;
+}
