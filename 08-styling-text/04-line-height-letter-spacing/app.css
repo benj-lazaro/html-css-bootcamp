@@ -1,0 +1,43 @@
+/* letter-spacing sets the horizontal spacing between text characters */
+/* letter-spacing is inherited */
+/* Keyword value: normal */
+/* Length value: em, px */
+/* Global value: inherit, revert, revert-layer */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) */
+
+/* line-height sets the height of a line box; set the distance between lines of text */
+/* line-height is inherited */
+/* Keyword value: normal */
+/* Length value: em, px, %, <unitless numeric value> */
+/* NOTE: A unitless numeric value is used as a multipler to the element's font-size */
+/* Global value: inherit, revert, revert-layer, unset */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) */
+
+
+/* word-spacing sets the length of space between words and between tags */
+/* word-spacing is inherited */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing) */
+
+h1 {
+  font-family: "Segoe UI", Futura, sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 20px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-weight: bold;
+  line-height: 2;
+  word-spacing: 20px;
+}
+
+a {
+  font-style: italic;
+}
