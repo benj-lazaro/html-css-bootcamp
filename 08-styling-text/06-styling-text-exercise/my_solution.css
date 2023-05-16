@@ -1,0 +1,35 @@
+/* My solution */
+/* CSS Text Basics Exercise (https://codepen.io/Colt/pen/LYBBPBO) */
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower");
+
+/* font size of 60px, center align with a sans-serif font */
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Italicized the font, give it a size of 50px with a shade of purple */
+h2 {
+  font-style: italics;
+  font-size: 50px;
+  color: #800080;
+}
+
+/* Use Google font 'indie flower', give it a size of 35px with a shade of pink */
+h3 {
+  font-family: "Indie Flower";
+  font-size: 35px;
+  color: #f09;
+}
+
+/* Change font weight to something very light, font size of 40px and a line height twice the font size 
+   and a 10px spacing between each letter
+*/
+p {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 2;
+  letter-spacing: 10px;
+}
