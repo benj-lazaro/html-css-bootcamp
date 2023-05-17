@@ -1,0 +1,29 @@
+/* text-transform specifies how to capitalize an element's text */
+/* Can be used to make text appear in all-uppercase, lowercase or each word capitalized */
+/* Values: capitalize, uppercase, lowercase, none */
+/* It is inheritable */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) */
+
+/* text-decoration sets the appearace of decorative lines on text */
+/* It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style and */
+/* text-direcoration-thickness properties */
+/* It is NOT inheritable */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) */
+
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  /* text-decoration-line: line-through;
+  text-decoration-color: cyan;
+  text-decoration-style: wavy; */
+  /* text-decoration-thickness: 10px; */
+  text-decoration: magenta line-through wavy 10px;
+}
+
+a {
+  text-decoration: none;
+}
