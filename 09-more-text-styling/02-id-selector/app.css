@@ -1,0 +1,15 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+/* ID selector matches an element based on the value of the element's 'id' attribute */
+/* The 'id' attribute's value MUST be unique & defined once per HTML document */
+
+#featured {
+  background-color: gold;
+  font-size: 20px;
+}
+
+#reviews {
+  text-decoration: gold underline;
+}
