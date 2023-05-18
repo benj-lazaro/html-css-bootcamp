@@ -1,0 +1,23 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+a {
+  color: olive;
+  text-decoration: none;
+}
+
+/* Pseudo class (:) specifies a special state of the selected element(s) */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) */
+
+/* cursor sets the mouse cursor to show when the mouse pointer is over an element */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/cursor) */
+
+a:visited {
+  color: orangered;
+}
+
+a:hover {
+  text-decoration: underline;
+  /* cursor: pointer; */
+}
