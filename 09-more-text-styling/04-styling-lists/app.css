@@ -1,0 +1,43 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+#featured {
+  background-color: gold;
+  font-size: 20px;
+}
+
+#reviews {
+  text-decoration: gold underline;
+}
+
+.tag {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+/* Styling lists */
+/* Reference ((https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists)) */
+
+/* list-style-type sets the marker of a list item element */
+/* It is inherited */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type) */
+/* Unicode character search (https://www.fileformat.info/info/unicode/char/search.htm) */
+
+
+/* list-style-position sets the position of the marker relative to the list item */
+/* It is inherited */
+/* The value of 'outside' (default) excludes the marker from the list item when selected */
+/* The value of 'inside' includes the marker with the list item when selected */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position) */
+
+/* list-style-image sets an image to be used as the list item marker */
+/* It is inherited */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image) */
+
+#cast {
+  list-style-type: "\1F44D";      /* 'Thumbs up sign' (U+1F44D) */
+  list-style-position: outside;
+  /* list-style-image: url("../../media/examples/rocket.svg"); */
+}
