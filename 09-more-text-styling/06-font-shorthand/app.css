@@ -1,0 +1,17 @@
+/* CSS shorthand properties (https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) */
+
+/* font is a shorthand property that sets different properties of an element's font */
+/* It is inherited */
+/* NOT encouraged, it is better to explicitly define the font properties of an element */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/font) */
+
+h1 {
+  /* font-family: Montserrat, sans-serif;
+  font-size: 50px;
+  font-weight: 100; */
+  font: 100 50px Montserrat, sans-serif;    /* font-weight, font-size, font-family with fallback */
+}
+
+p {
+  font: 100 20px/2 Montserrat, sans-serif;  /* font-weight, font-size, line-height, font-family with fallback */
+}
