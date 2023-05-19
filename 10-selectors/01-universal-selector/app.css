@@ -1,0 +1,21 @@
+/* Universal selector matches elements of any type */
+/* Often used when resetting (pre-defined browser) styles  */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+p {
+    color: purple;
+}
+
+.tag {
+    color: orange;
+}
+
+#featured {
+    color: gold;
+}
