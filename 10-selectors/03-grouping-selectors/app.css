@@ -1,0 +1,53 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: Merriweather, serif;
+}
+
+p {
+  color: purple;
+}
+
+.tag {
+  color: orange;
+}
+
+#featured {
+  color: gold;
+}
+
+input[type="number"] {
+  background-color: gold;
+}
+
+a[href*="wiki"] {
+  color: cyan;
+}
+
+a[href^="#"] {
+  color: darkviolet;
+}
+
+/* Selector list selects all matching nodes, separated by commas */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list) */
+
+/* Select and style all header elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Select and style classes of .score, .tag and id of #featured */
+.score,
+#featured,
+.tag {
+  color: white;
+  background-color: orangered;
+}
