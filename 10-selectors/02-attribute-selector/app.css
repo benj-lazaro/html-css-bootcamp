@@ -1,0 +1,38 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+p {
+  color: purple;
+}
+
+.tag {
+  color: orange;
+}
+
+#featured {
+  color: gold;
+}
+
+/* Attribute selector matches elements based on the value of a given attribute */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) */
+
+input[type="number"] {
+  background-color: gold;
+}
+
+/* a[href*="wiki"]  = style links with "wiki" anywhere in the URL */
+a[href*="wiki"] {
+  color: cyan;
+}
+
+/* a[href^="#"]     = style links that starts with "#" */
+a[href^="#"] {
+  color: darkviolet;
+}
+
+/* a[href$=".org"]  = style links that ends with ".org" */
+a[href$=".com"] {
+  color: brown;
+}
