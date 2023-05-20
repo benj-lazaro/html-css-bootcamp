@@ -1,0 +1,23 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: Merriweather, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Compound selector combine class, id, element selectors without spaces in-between each selector */
+
+/* Style a <h2> element that has a class of ".score" */
+h2.score {
+  color: blueviolet;
+}
