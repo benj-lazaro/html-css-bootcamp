@@ -1,0 +1,67 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: Merriweather, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* p {
+  color: purple;
+}
+
+.tag {
+  color: orange;
+}
+
+#featured {
+  color: gold;
+}
+
+input[type="number"] {
+  background-color: gold;
+}
+
+a[href*="wiki"] {
+  color: cyan;
+}
+
+a[href^="#"] {
+  color: darkviolet;
+}
+
+.score,
+#featured,
+.tag {
+  color: white;
+  background-color: orangered;
+} */
+
+/* Descendant combinator combines two selectors separated by a space "" */
+/* Elements matched by the 2nd selector if they have an ancestor element matching the 1st selector */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) */
+
+/* Style <span> elements that is a descendant of or nested within #cast */
+#cast span {
+  color: grey;
+}
+
+/* Child combinator > is placed between selectors */
+/* Matches only elements by the 2nd selector that are DIRECT CHILDREN of the 1st selector */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) */
+ 
+/* Style <li> that is a direct child of <ol> */
+ol > li {
+  border: 1px solid red;
+  /* color: red; */
+}
