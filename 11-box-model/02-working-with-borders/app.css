@@ -1,0 +1,18 @@
+/* border is a shorthand property that sets an element's border */
+/* Sets the value of border-width, border-style & border-color */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/border) */
+
+h1 {
+  /* border-width: 2px;
+  border-color: gold;
+  border-top-color: red;
+  border-right-color: orange;
+  border-bottom-color: yellow;
+  border-left-color: green;
+  border-style: solid;
+  border-bottom-style: dotted; */
+  border: 2px solid green;
+  /* border-top-color: purple; */
+  /* border-bottom: 3px dashed magenta; */
+}
