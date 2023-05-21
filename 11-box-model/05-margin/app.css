@@ -1,0 +1,20 @@
+/* margin shorthand sets the margin area on all 4 sides of an element  */
+/* margin is the spaces or 'forcefield' outside the edge of the box (border) */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/margin) */
+
+/* header elements (by default) come with a margin value set by the browser */
+h1 {
+  border: 1px solid salmon;
+  /* All 4 sides 10px of margin */
+  /* margin: 10px; */
+
+  /* Clockwise: TOP, RIGHT, BOTTOM, LEFT */
+  /* margin: 10px 20px 30px 40px */
+
+  /* TOP/BOTTOM 20px and LEFT/RIGHT 50px */
+  margin: 20px 50px;
+}
+a {
+  border: 1px solid olive;
+}
