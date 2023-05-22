@@ -1,0 +1,29 @@
+/* Regular box model */
+/* Where the inner box content is controlled by height & width */
+
+
+div {
+  background-color: purple;
+  margin: 30px;
+  height: 200px;
+  width: 200px;
+  border: 5px solid cyan;
+  padding: 10px;
+  border: 50px solid green;
+}
+
+/* Alternate box model */
+/* Alternative way of calculating dimensions (height & width) of an element */
+/* It controls the overall dimension of the entire visible box (not the content-box) */
+
+/* The box size does NOT change regardless of the changes in the border & padding properties */
+
+/* Using box-sizing property w/c sets how to total width & height of an element is calculated */
+/* It is NOT inherited */
+/* Values: content-box, border-box */
+/* Global values: inherit, initial, revert, revert-layer, unset */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) */
+
+#alternate {
+  box-sizing: border-box;
+}
