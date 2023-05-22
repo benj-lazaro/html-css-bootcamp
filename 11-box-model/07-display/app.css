@@ -1,0 +1,38 @@
+p {
+  font-size: 30px;
+}
+
+/* display property sets whether an element is treated as a block, inline or inline-block */
+/* and layout (flow layout, grid or flex) used for its children */
+
+/* inline-block is a hybrid of block & inline */
+/* It does NOT break onto a new line */
+/* Respects the width & height assigned to the element */
+/* The padding, margin & border properties will cause neighboring elements to be pushed away from the box */
+/* Often used for aligning images side-by-side within a <div> on the same horizontal plane */
+
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/display) */
+
+#word {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 30px;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+}
+h1 {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 30px;
+  height: 300px;
+  display: inline;
+}
+
+.box {
+  border: 1px solid red;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
