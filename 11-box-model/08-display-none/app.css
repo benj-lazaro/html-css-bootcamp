@@ -1,0 +1,11 @@
+/* opacity property sets the opacity of an element */
+/* A value of '0' hides the element but does NOT remove it from the flow of the HTML document */
+/* The element still takes up space in the HTML document */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) */
+
+/* display property with the value of 'none' removes the element from the flow of the HTML document */
+
+h1 {
+  /* display: none; */
+  opacity: 0;
+}
