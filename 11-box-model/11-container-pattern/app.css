@@ -1,0 +1,20 @@
+/* Common pattern when building websites is wrapping elements in a container (e.g. <div>) */
+/* Then giving the container some some margin or padding */
+
+/* Elements are individually given a margin-left value */
+
+/* h1 {
+  margin-left: 80px;
+}
+
+p {
+  margin-left: 80px;
+}
+button {
+  margin-left: 80px;
+} */
+
+/* Collectively provide a margin-left of 200px on all elements within the container */
+.container {
+  margin-left: 200px;
+}
