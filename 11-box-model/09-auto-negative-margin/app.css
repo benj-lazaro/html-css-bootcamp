@@ -1,0 +1,23 @@
+/* margin shorthand property sets the margin area on all four sides of an element */
+/* It is NOT inherited */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/margin) */
+
+h1 {
+  margin: -20px;        /* Negative values moves the element off the screen or HTML document */     
+}
+
+#container {
+  border: 1px solid purple;
+  background-color: lavenderblush;
+  height: 400px;
+  width: 600px;
+}
+
+#container h3 {
+  text-align: center;
+  border: 1px solid black;
+  width: 150px;
+  margin: 100px auto;   /* The value 'auto' allows the browser to find a suitable on the horizontal plane */
+                        /* However 'auto' CAN'T center an element on the vertical plane */
+}
