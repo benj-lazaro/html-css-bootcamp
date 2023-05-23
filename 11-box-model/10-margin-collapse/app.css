@@ -1,0 +1,19 @@
+/* Margin collapse refers to the top & bottom margin values between two elements (vertically on top of one */
+/* another), it collapse and uses the larger value for its margin instead of its aggregated value */
+
+/* Two elements that have vertical margins (bottom & top) inteaact; they do NOT push it other away and */
+/* sum up the margin value between them. Instead the larger margin value between the two wins. */
+
+/* Negative margin value on a vertical plane, the value with the larger magnitude (despite the negative sign) wins e.g. -50 wins over -20 */
+
+/* Example instead of a total of 40px between the margin-bottom of 20px and margin-top of 20px of the */
+/* neighboring element below it has collapse down to a 20px of margin between the elements */
+
+/* This DOES NOT affect elements' margin on the same horizontal plance (e.g. left & right margins) */
+
+p {
+  border: 1px solid mediumseagreen;
+  margin: 0 20px;                     /* 0 top & bottom margin, 20px left & right margin */
+  width: 200px;
+  display: inline-block;
+}
