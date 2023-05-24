@@ -1,0 +1,16 @@
+/* min-width sets the minimum width of an element */
+/* min-width is set whenever min-width is larger than max-width or width */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/min-width) */
+
+/* max-width sets the maximum width of an element */
+/* max-width overrides width but min-width overrides max-width */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) */
+
+.box {
+  width: 80%;                           /* initial relative size of the element */
+  min-width: 300px;                     /* stops shrinking at 300px */
+  max-width: 500px;                     /* stops expanding at 500px */
+  height: 200px;
+  background-color: mediumvioletred;
+  margin: 0 auto;                       /* centers the element on the HTML document */
+}
