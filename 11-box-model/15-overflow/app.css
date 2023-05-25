@@ -1,0 +1,23 @@
+/* overflow property sets the behavior of the content when it does NOT fit in the parent element box */
+/* It sets the horizontal and vertical direction */
+/* It is NOT inherited */
+
+/* overflow-x handles the overflow of content on the horizontal plane */
+/* overflow-y handles the overflow of content on the vertical plane */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) */
+
+.box {
+  border: 6px solid olive;
+  height: 300px;
+  width: 300px;
+  font-size: 40px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+span {
+  width: 400px;
+  display: inline-block;
+  background-color: orangered;
+}
