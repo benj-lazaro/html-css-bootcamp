@@ -1,0 +1,13 @@
+/* border-radius is a shorthand property that rounds the corners of an element's outer border edge */
+/* 4-values = element's clockwise corners: top-left, top-right, bottom-right & bottom-left */
+/* It is NOT inherited */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) */
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: #228b22;
+  /* border-radius: 10px; */
+  border-radius: 10px 20px 30px 40px;
+}
