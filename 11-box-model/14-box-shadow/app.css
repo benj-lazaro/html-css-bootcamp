@@ -1,0 +1,28 @@
+/* box-shadow property add shadow effects around an element's frame */
+/* Can set multiple effects separated by commas */
+/* It is NOT inherited */
+
+/* A box shadow is describe by X & Y offets relative to the element, blur, spread radius & color */
+/* 3-value: x-offset, y-offset, color */
+/* 4-value: x-offset, y-offset, blur-radius, color */
+/* 5-value: x-offset, y-offset, blur-radius, spread-radius, color */
+
+/* Negative x-offset moves the shadow to the left of the element */
+/* Negative y-offset moves the shadow above the element */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) */
+
+/* Box Shadow CSS Generator (https://cssgenerator.org/box-shadow-css-generator.html) */
+
+.box {
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid grey; */
+  margin: 0 auto;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 10px red, -2px -2px 10px blue; */
+  /* box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
