@@ -39,6 +39,9 @@ a.active {                      /* The styled link points to the currently loade
 
 
 /* Photo Grid */
+.gallery {
+    padding: 16px;
+}
 
 .card {
     width: 49.75%;
@@ -50,8 +53,11 @@ a.active {                      /* The styled link points to the currently loade
 .card img {
     height: 500px;
     width: 100%;                /* 100% width of the parent element i.e. .card */
+    object-fit: cover;          /* Maintains the aspect ratio of the images when container is resized */
 }
 
 .card h2 {
     display: inline-block;
+    margin: 8px 0 16px 0;
+    font-weight: 300;
 }
