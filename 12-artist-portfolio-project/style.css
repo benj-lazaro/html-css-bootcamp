@@ -34,3 +34,8 @@ h1 {
 a.active {                      /* The styled link points to the currently loaded HTML document */
     border-bottom: 1px solid black;
 }
+
+img {
+    width: 40%;
+    height: 500px;
+}
