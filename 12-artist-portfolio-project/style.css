@@ -2,6 +2,8 @@ body {
     font-family: 'Cormorant', serif;
 }
 
+/* Navigation Bar */
+
 .navbar {
     margin: 32px;
 }
@@ -35,7 +37,21 @@ a.active {                      /* The styled link points to the currently loade
     border-bottom: 1px solid black;
 }
 
-img {
-    width: 40%;
+
+/* Photo Grid */
+
+.card {
+    width: 49.75%;
+    display: inline-block;
+    box-sizing: border-box;     /* Make the <div> element as big as its box */
+    padding: 16px;              /* Make space between elements w/o pushing its neighbors to the next row */
+}
+
+.card img {
     height: 500px;
+    width: 100%;                /* 100% width of the parent element i.e. .card */
+}
+
+.card h2 {
+    display: inline-block;
 }
