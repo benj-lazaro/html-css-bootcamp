@@ -2,12 +2,22 @@ body {
     font-family: 'Cormorant', serif;
 }
 
+.navbar {
+    margin: 32px;
+}
+
 h1 {
-    display: inline-block;      /* inline-block respects horizontal & vertical margin & padding */
+    display: inline-block;      /* The inline-block respects horizontal & vertical margin & padding */
+    font-weight: 300;
+    margin: 0 32px 0 0;         /* Reset default values & put 32px to the right, to push the <nav> element */
 }
 
 .links {
     display: inline-block;
+}
+
+.links ul {
+    padding: 0;                 /* Remove the default assigned padding value (left-padding) */
 }
 
 .links li {
@@ -18,5 +28,9 @@ h1 {
     color: black;
     text-decoration: none;
     font-size: 20px;
-    margin: 0 8px;              /* 0 margin top & bottom, 8px margin left & right */
+    margin: 0 8px;              /* Assigns a 0px to margin top & bottom and 8px to margin left & right */
+}
+
+a.active {                      /* The styled link points to the currently loaded HTML document */
+    border-bottom: 1px solid black;
 }
