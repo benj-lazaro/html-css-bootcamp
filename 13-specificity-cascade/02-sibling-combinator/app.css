@@ -1,0 +1,38 @@
+/* Sibling Combinators */
+/* Refers to child elements/selectors that share the same parent element/selector */
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: Merriweather, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* General Sibling Combinator '~' */
+/* Target sibling selectors that share and comes after the same parent selector */
+/* Sibling selectors does NOT require to be adjacent with each other */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) */
+
+h4 ~ p {
+  color: purple;
+}
+
+/* Adjacent Combinator '+' */
+/* Targets a selector that is DIRECTLY AFTER the first selector  */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) */
+
+h2 + p {
+  color: deeppink;  /* Change the color of the <p> element that IMMEDIATELY COMES AFTER an <h2> element */
+}
