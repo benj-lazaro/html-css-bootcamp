@@ -1,0 +1,56 @@
+/* Pseudo Classes */
+/* Keyword added to a selector that specifies a special state of the selected element(s) */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) */
+
+body {
+  font-family: Merriweather, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Pseudo-class hover */
+.score:hover {
+  color: orange;
+}
+
+/* Pseudo-class disabled = selects an element with the attribute of 'disabled' defined */
+input:disabled {
+  background-color: purple;
+}
+
+/* Pseudo-class placeholder-shown = selects an element that is displaying the placeholder text */
+input:placeholder-shown {
+  background-color: red;
+}
+
+/* Pseudo-class visisted */
+a:visited {
+  color: olive;
+}
+
+/* Pseudo-class nth-of-type */
+/* The 'n' refers to the repeating item of the same element type */
+li:nth-of-type(2n) {             /* Select every 2nd list item*/
+  border: 1px solid magenta;
+}
+
+/* Pseudo-class active */
+button:active {
+  background-color: pink;
+}
+
+/* Pseudo-class focus */
+input:focus {
+  border: 5px solid green;
+}
+
+/* Pseudo-class not; the space between selector and ':not' class is intentional */
+body :not(h1, h2, h3, h4, h5, h6) {  /* Style elements that is NOT a heading element */
+  border: 5px solid fuchsia;
+}
