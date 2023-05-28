@@ -1,0 +1,25 @@
+/* Pseudo elements is a keyword added to a selectsor */
+/* This keyword allows to style a specific part of the selected element(s) */
+/* It is prefixed by '::' instead of ':" which refers to a pseudo-class */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) */
+
+
+/* Style the first line of content for every <p> element in the HTML document */
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+/* Style the 1st letter of every 'first-of-type' <p> element in the HTML document */
+p:first-of-type::first-letter {
+  color: magenta;
+  /* text-transform: uppercase; */
+  font-size: 200%;
+}
+
+/* Style the content that is being 'selected' by the user browsing the HTML document */
+p::selection {
+  color: red;
+  background-color: yellow;
+}
