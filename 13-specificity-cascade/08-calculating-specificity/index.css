@@ -1,0 +1,24 @@
+/* Specificity Calculation */
+
+/* Calculated by the browser using 3 numbers */
+/* - Number of ID */
+/* - Number of Class | Attribute | Pseudo Class */
+/* - Number of Type (Element) | Pseudo Element */
+
+/* The browser selects the CSS rules with the highter specificity number */
+/* Do NOT treat the Specificity Number as a 3 digit number but as 3 separate individual digits */
+/* Each digit placeholder has its own specificity weight; ID (leftmost) having the highest weight */
+
+/* Selector Specificity in VS Code = hover mouse over the selector */
+
+/* This rule has the specificity value of 0 1 0 */
+/* Specificity = 1 class */
+.special {
+  color: olive;
+}
+
+/* This rule has the specificity value of 0 1 1 = WINS! */
+/* Specificity = 1 pseud class and 1 type / element */
+p:nth-of-type(2) {
+  color: coral;
+}
