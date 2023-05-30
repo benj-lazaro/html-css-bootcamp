@@ -1,0 +1,27 @@
+/* Specificity */
+/* Identifies which rules applied to the same element wins out */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) */
+
+/* Specificity Hierarchy (most to least specific) */
+/* 1. Inline Styles */
+/* 2, ID select */
+/* 3. Class | Attribute | Pseudo class */
+/* 4. Type | Pseudo elements */
+
+p {
+  color: olive;
+  font-family: fantasy;
+}
+
+/* Class selector has higher specificity over an Element selector */
+.featured {
+  color: orangered;
+  font-size: 30px;
+}
+
+/* ID selector has the highest specificity over Class and Element seletors */
+#special {
+  color: magenta;
+  font-size: 10px;
+}
