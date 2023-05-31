@@ -1,0 +1,20 @@
+/* Cascade Hierarchy */
+/* 1. Importance (!important) */
+/* 2. Origin (website, browser or user-defined) */
+/* 3. Specificity */
+/* 4. Position (order of the selectors/rules that are defined w/in the CSS file) */
+
+/* The !important flag alters the rules selecting declarations inside the cascade */
+/* It ignores the specificity of the CSS rules */
+/* It must be the last token (after the value) in the declaration */
+/* Use sparingly; avoid when possible */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/important) */
+
+#heading {
+  color: purple;
+}
+
+h1 {
+  color: olive !important;
+}
