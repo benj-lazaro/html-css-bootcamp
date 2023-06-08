@@ -13,12 +13,48 @@ h4,
 h5,
 h6 {
   font-family: Bitter, serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-size: 50px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-size: 38px;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font-size: 30px;
+  letter-spacing: 0.25px;
+}
+
+h5 {
+  font-size: 24px;
+  letter-spacing: 0px;
+}
+
+h6 {
+  font-size: 20px;
+  letter-spacing: 0px;
 }
 
 .content {
   max-width: 900px;
   margin: 0 auto;
   padding: 32px;
+}
+
+.content h3 {
+  text-transform: capitalize;
 }
 
 .info {
@@ -34,16 +70,11 @@ h6 {
 }
 
 .headline {
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0px;
   margin: 40px 0; /* 40px at top & bottom and 0px on the left & right*/
-}
-
-h2 {
-  font-size: 50px;
-  font-weight: 500;
-  letter-spacing: -0.5px;
 }
 
 .quote {
