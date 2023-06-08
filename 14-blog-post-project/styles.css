@@ -32,3 +32,31 @@ h6 {
 .info span {
   color: #E95400;
 }
+
+.headline {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  margin: 40px 0; /* 40px at top & bottom and 0px on the left & right*/
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  border-left: 2px solid #e95400 ;
+  padding-left: 16px;
+  margin: 32px 0 32px 32px;
+}
+
+.quote cite {
+  display: block;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
