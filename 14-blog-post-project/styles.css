@@ -53,6 +53,11 @@ h6 {
   padding: 32px;
 }
 
+code {
+  color: #E95400;
+  font-weight: bold;
+}
+
 .content h3 {
   text-transform: capitalize;
 }
