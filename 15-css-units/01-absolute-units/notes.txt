@@ -1,0 +1,28 @@
+Two Category of CSS Units
+=========================
+- Reference (https://drafts.csswg.org/css-values-4/)
+
+
+Absolute Values
+---------------
+- Values that are NOT relative to anything
+- They are NOT responsive
+- They are NOT based on the real-world measurement
+- Reference (https://drafts.csswg.org/css-values/#absolute-lengths)
+
+* px
+* pt
+* cm
+* in
+* mm
+
+Relative Values
+---------------
+- Specifies units relative to some other value (e.g. parent element, viewport, etc.)
+- They scale well (a.k.a responsive)
+
+* em
+* rem
+* vh
+* vw
+* %
