@@ -1,0 +1,30 @@
+/* rem (root ems) relative to the root <html> element's font-size */
+
+/* default browser size of 1rem = 16px */
+/* 2rem = 32px */
+
+/* Using relative unit of rem */
+h1 {
+  font-size: 6rem; /* 96px */
+}
+
+h2 {
+  font-size: 4rem; /* 64px */
+}
+
+p {
+  font-size: 2rem; /* 32px */
+}
+
+/* Using absolute unit of px */
+.pixels h1 {
+  font-size: 96px; /* 6rem */
+}
+
+.pixels h2 {
+  font-size: 64px; /* 4rem */
+}
+
+.pixels p {
+  font-size: 32px; /* 2rem */
+}
