@@ -1,0 +1,21 @@
+/* Percentage is a relative unit that defines a size */
+/* A size that is relative to some other value (or element) */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) */
+
+.container {
+  border: 1px solid black;
+  height: 600px; /* Hard-coded height */
+  width: 600px; /* Hard-coded width */
+}
+
+.box {
+  background-color: olive;
+  width: 50%; /* Half the width of the .container (parent) */
+  height: 50%; /* Half the height of the .container (parent) */
+}
+
+p {
+  font-size: 40px;
+  line-height: 200%; /* Twice the line-height of the <p> element */
+}
