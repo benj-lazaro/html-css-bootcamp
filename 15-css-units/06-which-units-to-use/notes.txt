@@ -1,0 +1,25 @@
+Which units to use & when?
+--------------------------
+
+px
+==
+- For small details e.g. borders & shadows
+- Avoid for font-size property as it does not scale & not responsive
+- Small ajustment without caring about scaling very much
+
+rem / em
+========
+- For font-size, padding & margin properties
+- Scalable and responsive
+- rem keeps the font-size relative to other elements
+- em keeps the font-size relative to its parent element
+
+% (percent)
+===========
+- For defining layouts, heights and widths
+- Not much need when using Flexbox or Grid
+
+vh / vw
+=======
+- For larger layout concerns
+- Usually when wanting to take the full height / width of the viewport or make an overlay
