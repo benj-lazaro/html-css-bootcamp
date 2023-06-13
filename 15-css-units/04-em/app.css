@@ -1,0 +1,29 @@
+/* em is a relative unit that represents the calculated font-size of the parent element. */
+/* It is based on typography where 1em = width of the capital letter 'M' */
+/* Being a relative unit offers scalability (scalable text) */
+
+/* 1em = equal to the computed font-size of the parent element */
+
+/* NOTE: Nested child elements will scale accordingly to the font-size of its older sibling element */
+/* It depends on the target element's position in the parent-child relationship */
+
+/* NOTE: WHen used with other properties, 1em = computed font-self of the element ITSEL */
+/*       and NOT that of the parent element */
+
+.container {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 4em; /* 4 times the font-size of the .container (parent) = 120px */
+  margin: 0;
+  margin-left: 1.5em; /* 1.2 times the font-size of <h1> element itself (4em or 120px) = 180px /
+}
+
+p {
+  font-size: 1.5em; /* 1.5 times the font-size of the .container (parent) = 45px */
+}
+
+.small {
+  font-size: 0.7em; /* 0.7 times the font-size of the .container (parent) = 21px */
+}
