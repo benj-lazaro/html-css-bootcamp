@@ -1,0 +1,27 @@
+/* The float property places an element left or right side of its container */
+/* It allows text & inline elements to wrap around it */
+/* The target element is REMOVED from the normal flow of the page */
+/* It is NOT inherited */
+
+/* Originally created for floating images inside blocks of text */
+/* Intended to facilitate common layout seen in newspaper articles wherein an image */
+/* with text flowing around it */
+
+/* The default value is 'none' */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/float) */
+
+p {
+  font-size: 30px;
+  margin-left: 100px; /* Does NOT respect by the area where <img> with float property is located */
+}
+
+img {
+  width: 400px;
+  float: left; /* Pushes the image to the left side of the parent element or .container */
+}
+
+.container {
+  width: 1000px;
+  border: 2px solid red;
+}
