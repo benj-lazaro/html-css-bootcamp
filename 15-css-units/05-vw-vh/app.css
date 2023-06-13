@@ -1,0 +1,25 @@
+/* vw (View Width)  = 1vw is 1% of the width of the viewport */
+/* vh (view Height) = 1 vh is 1% of the height of the viewport */
+/* Reference (https://drafts.csswg.org/css-values/#en) */
+
+/* 100vh = full height of the viewport screen (browser) */
+/* 100vw = full width of the viewport screen (browser) */
+
+/* A viewport refers to the visible area of the browser */
+
+body {
+  margin: 0;
+  width: 800px;
+}
+
+.container {
+  background-color: magenta;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container2 {
+  background-color: cyan;
+  width: 50vw;
+  height: 100vh;
+}
