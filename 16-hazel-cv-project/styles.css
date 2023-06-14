@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-color: #f08e80;
+  height: 90vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Place spaces between navbar items */
+  align-items: center; /* Center navbar items vertically */
+  color: white;
+  padding: 24px 32px; /* top & bottom = 24px, left & right = 32px */
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+  font-size: 1.2rem;
+}
+
+.navbar p {
+  font-size: 2rem;
+  font-weight: bold;
+}
