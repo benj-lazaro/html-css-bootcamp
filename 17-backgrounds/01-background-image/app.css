@@ -1,0 +1,15 @@
+/* background-image property sets 1 or more background images to an element */
+/* It is NOT inherited */
+
+/* The background images are drawn stacking context layers on top of each other. */
+/* NOTE: The first layer specified is drawn as if it is closer to the user. */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) */
+
+.box {
+  border: 1px solid red;
+  height: 300px;
+  width: 300px;
+  background-image: url("images/peacock.png"), url("images/sunset.jpg"); /* peacock is infront of sunset */
+  background-color: aquamarine;
+}
