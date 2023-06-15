@@ -1,0 +1,20 @@
+/* The background-size sets the size of the element's background image.*/
+/* Spaces NOT covered by a background image are filled with the background-color property */
+/* It is NOT inherited */
+
+/* The value 'contain' scales the image as large as possible w/in the container w/o cropping */
+/* The value 'cover' scales the image as small as possible to fill the container */
+/* The value 'auto' scales the image & maintains the proportion */
+
+/* 1-value = width of the image; height becomes 'auto' */
+/* 2-values = 1st value (width), 2nd value (height) */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) */
+
+.box {
+  border: 1px solid red;
+  height: 500px;
+  width: 900px;
+  background-image: url("images/people.jpg");
+  background-size: cover;
+}
