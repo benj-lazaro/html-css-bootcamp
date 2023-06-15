@@ -1,0 +1,17 @@
+/* background-repeat property sets how background images are repeated. */
+/* It is NOT inherited */
+
+/* The value 'no-repeat' STOPS the background image from repeating */
+/* The value 'repeat-x' repeats background image in the horizontal plane */
+/* The value 'repeat-y' repeats background image in the vertical plane */
+/* The default value 'repeats' repeats the background image in both x & y directions */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat) */
+
+.box {
+  border: 1px solid red;
+  height: 500px;
+  width: 500px;
+  background-image: url("images/peacock.png");
+  background-repeat: no-repeat;
+}
