@@ -1,0 +1,15 @@
+/* The background-position sets the initial position of the background image */
+/* relative to the container where the background image is used  */
+
+/* It is NOT inherited  */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) */
+
+.box {
+  border: 1px solid red;
+  height: 400px;
+  width: 200px;
+  background-image: url("images/woman.jpg");
+  background-size: cover;
+  background-position: left bottom; /* x-value & y-value*/
+}
