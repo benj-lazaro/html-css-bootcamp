@@ -1,0 +1,11 @@
+/* linear-gradient() creates an image consisting of a progressive transition */
+/* between two or more colors along a straight line */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient) */
+
+.box {
+  border: 2px solid black;
+  height: 400px;
+  width: 400px;
+  background-image: linear-gradient(red, blue 30%); /* blue begins at 30% */
+}
