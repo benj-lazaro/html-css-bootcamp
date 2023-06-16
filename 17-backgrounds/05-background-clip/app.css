@@ -1,0 +1,19 @@
+/* background-clip sets whether an an element's background image extends */
+/* underneath its border box, padding box or content box */
+
+/* It is NOT inherited */
+
+/* 'border-box'  = background image extends to the outside edge of the border */
+/* 'padding-box' = background image extends to the outside edge of the padding */
+/* 'content-box' = background image is painted within (clipped to) the content box */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip) */
+
+.box {
+  border: 20px dashed red;
+  height: 400px;
+  width: 400px;
+  background-image: url("images/woman.jpg");
+  padding: 30px;
+  background-clip: content-box;
+}
