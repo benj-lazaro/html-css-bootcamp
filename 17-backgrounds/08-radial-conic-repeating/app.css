@@ -1,0 +1,29 @@
+/* radial-gradient() creates an image of a progressive transition */
+/* between two or more colors that radiate from an origin. */
+/* It's shape may be a circle of an ellipse. */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient) */
+
+/* conic-gradient() create an image consisting of a gradient */
+/* with color transition rotated around a center point (instead of radiating from the center */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient) */
+
+/* repeating-linear-gradient() creates an image consisting of repeating linear gradients */
+/* It is similar to linear-gradient() but it repeats the color stops indefinitely */
+/* in all directions so as to cover its entire container */
+
+/* The result of the functions is an object of the <gradient> data type */
+/* w/c is a special kind of <image>. */
+
+.box {
+  border: 2px solid black;
+  height: 700px;
+  width: 400px;
+  /* background-image: radial-gradient(circle at bottom, cyan 60%, pink, yellow); */
+
+  /* To remove the harsh-line in a conic-gradient() make the starting and ending color */
+  /* to be of the same (e.g. start with cyan and ends with cyan */
+  /* background-image: conic-gradient(cyan, yellow, magenta, cyan); */
+
+  background-image: repeating-linear-gradient(45deg, blue, red 10%);
+}
