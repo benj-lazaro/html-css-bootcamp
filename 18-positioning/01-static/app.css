@@ -1,0 +1,16 @@
+/* Static Positioning */
+/* The position value 'static' positions an element according to the normal flow of the document */
+/* This is the default value for the position property */
+/* The other properties such as top, right, left, bottom and z-index will have NO EFFECT. */
+
+/* The position property sets how an element is positioned in a document. */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/position) */
+
+p {
+  border: 1px solid black;
+  background-color: magenta;
+  margin: 30px;
+  font-size: 2rem;
+  position: static;
+  left: 23px; /* Will NOT be implemented due to 'static' value */
+}
