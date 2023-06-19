@@ -1,0 +1,23 @@
+/* CSS filter effect defines an element's rendering BEFORE it is DISPLAYED in the document.  */
+/* It calls different functions such as blur(), brightness(), contrast(), etc. */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_filter_effects) */
+
+/* The filter property applies graphical (PhotoShop-esque) effects to an ELEMENT */
+/* It is commonly used to adjust the rendering of images, backgrounds and borders */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/filter) */
+
+.box {
+  border: 2px solid black;
+  height: 700px;
+  width: 700px;
+  background: url("images/people.jpg");
+  background-size: cover;
+  filter: blur(20px);
+}
+
+img {
+  width: 500px;
+  border: 10px solid pink;
+  filter: hue-rotate(180deg);
+  margin-top: 30px;
+}
