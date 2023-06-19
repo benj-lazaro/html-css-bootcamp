@@ -1,0 +1,28 @@
+/* Z-Index Positioning */
+/* z-index sets the z-order of a positioned element & its descendants. */
+/* It specifies the elevation of an element relative to other elements. */
+
+/* NOTE: z-index ONLY WORKS on elements with a position property (BESIDES 'static') */
+
+/* An overlapping element with a higher z-index will be visually on top of the other elements. */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) */
+
+/* The position property sets how an element is positioned in a document. */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/position) */
+
+p {
+  border: 1px solid black;
+  background-color: magenta;
+  margin: 30px;
+  font-size: 2rem;
+  z-index: 2; /* Overlaps other elements with a lower z-index value*/
+  position: relative;
+}
+
+#special {
+  position: relative;
+  background-color: yellow;
+  top: 200px;
+  left: 40px;
+  z-index: 1;
+}
