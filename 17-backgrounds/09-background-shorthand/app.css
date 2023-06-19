@@ -1,0 +1,15 @@
+/* background is a shorthand property that sets all background style properties at once. */
+/* Component properties NOT set in the shorthand declaration are set to their default values */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/background) */
+
+.box {
+  border: 2px solid black;
+  height: 700px;
+  width: 400px;
+
+  /* The background property is specified as 1 or more background layers, separated by commas */
+  /* NOTE: The <bg-size> may ONLY be included AFTER <position> separated by a '/' */
+  background: url("images/peacock.png") no-repeat center/200%,
+    url("images/sunset.jpg") no-repeat right/300%;
+}
