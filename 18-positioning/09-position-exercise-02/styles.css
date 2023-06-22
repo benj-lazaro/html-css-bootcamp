@@ -1,0 +1,20 @@
+/* Resposition the blue box to the middle right-hand side of the red box */
+/* With half (50%) of the blue box overflowing the edge of the red box. */
+
+.container {
+  background-color: red;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  right: -50px;
+  /* 50% of the red box's height - 50px (center) of the blue box*/
+  top: calc(50% - 50px);
+  /* top: 150px */
+}
