@@ -1,0 +1,18 @@
+/* Created a fixed side bar with red background using the <div> with class of "sidebar" */
+/* Dimension of the sidebar is 200px wide and the full height of the viewport */
+/* Position the button 'X' to the top-right within the red sidebar */
+
+.sidebar {
+  background-color: red;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.sidebar button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
