@@ -1,0 +1,26 @@
+/* transition is a shorthand property that enables to define the transition between 2 states. */
+/* States may be defined using pseudo classes or dynamically set using JavaScript */
+
+/* Syntax: */
+/* transition: <property> <duration> <timing-function> <delay>; */
+/* transition: <1st transition property>, <2nd transition property>, <nth transition property> */
+/* transition: all <duration> */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/transition) */
+
+.btn {
+  border: 2px solid black;
+  color: orangered;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 30px;
+  background-color: white;
+  /* Transition properties color w/in 3 seconds & background color w/in 1 second */
+  transition: color 3s, background-color 1s;
+}
+
+.btn:hover {
+  /* Change text and background color when hovered */
+  background-color: orangered;
+  color: white;
+}
