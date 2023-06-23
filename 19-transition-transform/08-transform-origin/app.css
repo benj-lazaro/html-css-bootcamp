@@ -1,0 +1,26 @@
+/* transform-origin sets the origin for an element's transformation */
+/* Commonly used along with the rotate() of the transform property */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin) */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: olive;
+  display: inline-block;
+}
+
+.first {
+  background-color: orangered;
+  /* Set the element's origin point at the element's bottom-right */
+  transform-origin: bottom right;
+  /* Rotate the element at 45 degrees */
+  transform: rotate(45deg);
+}
+
+h1 {
+  /* Rotate element at 20 degrees and then scale it 3 times along the X-plane */
+  transform: rotate(20deg) scaleX(3);
+  display: inline-block;
+  border: 1px solid black;
+}
