@@ -1,0 +1,22 @@
+/* transform lets you rotate, scale, skew or translate an element */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/transform) */
+
+/* translate() repositions an element in the horizontal/vertical directions */
+/* The passed values or coordinates define how much the element in each direction */
+
+/* Using translate() does NOT impact the performance of the browser  */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate) */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: olive;
+  display: inline-block;
+}
+
+.first {
+  background-color: orangered;
+  /* Repositions the element 100px from the left and 200px from the top of its original location */
+  transform: translate(100px, 200px);
+  /* margin-left: 400px; */
+}
