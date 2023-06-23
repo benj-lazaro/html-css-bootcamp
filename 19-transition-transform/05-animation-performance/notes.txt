@@ -1,0 +1,16 @@
+Animation Performance
+=====================
+- If you care about performance, NOT all CSS properties are advised to be animated
+- Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
+- Certain CSS properties impacts certain stages of the browser rendering process
+    - Animating CSS properties such as margin, width
+    - Forces the browser to do a layout recalculation, repainting and re-compositing
+
+    - Animating CSS properpeties such as color and color-background
+    - Forces the browser to re-paint and re-composite
+
+- The most animatable CSS property is opacity and transform
+    - Skips the Layout and Painting phases
+    - Forces the browser to perform re-composition ONLY
+    - It has the LOWEST impact and offers the highest performance

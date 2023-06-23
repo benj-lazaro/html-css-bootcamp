@@ -1,0 +1,23 @@
+How the browser rendering work
+==============================
+- Describes the inner workings/phases on the browser when an animation kicks off
+
+- JavaScript
+    - JS kicks things off by trigerring animation changes (CSS too)
+
+- Style Calculations
+    - Browser figures out w/c styles apply to which elements
+    - Based off of your selectors
+
+- Layout
+    - Browser calculates how much space each element takes up
+    - Browser calculates where each element should go
+
+- Painting
+    - Browser fills in the pixels on the screen, paiting all the text, colors, borders, etc
+    - Often done across multiple layers
+
+- Compositing
+    - Browser takes multiple layers it paints
+    - Combines them into one to draw on screen
+    - It makes sure overlapping elements are displayed correctly
