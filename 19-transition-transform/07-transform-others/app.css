@@ -1,0 +1,25 @@
+/* Other transform property functions are as follows */
+/* scale() scales an element up or down on the 2D plane */
+/* rotate() rotates an element around a fixed point on the 2D plane */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function) */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: olive;
+  display: inline-block;
+}
+
+.first {
+  background-color: orangered;
+  /* Scale up the element to twice its initial size in all directions (X & Y) */
+  transform: scale(2);
+  /* margin-left: 400px; */
+}
+
+h1 {
+  /* Rotate the element to 20 degress */
+  transform: rotate(20deg);
+  display: inline-block;
+  border: 1px solid black;
+}
