@@ -1,0 +1,29 @@
+/* transition is a shorthand property that enables to define the transition between 2 states. */
+/* States may be defined using pseudo classes or dynamically set using JavaScript */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/transition) */
+
+/* transition-timing-function specifies the rate that the change (transition) happens at */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function) */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions) */
+
+/* Syntax: */
+/* transition: <property> <duration> <timing-function> <delay>; */
+/* transition: <property> <duration> <timing-function>; */
+
+.btn {
+  border: 2px solid black;
+  color: orangered;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 30px;
+  background-color: white;
+  /* transition: <property> <duration> <timing-function>; */
+  /* The 'ease-out' value starts the transition quickly then slows down */
+  transition: transform 3s ease-out;
+}
+
+.btn:hover {
+  /* Move the element 100px along the X plane to the right */
+  transform: translateX(100px);
+}
