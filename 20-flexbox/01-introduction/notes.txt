@@ -1,0 +1,6 @@
+Flexbox
+-------
+- It is a layout method for laying out items in rows or columns
+- It is a relatively recent addition to CSS, created to address the difficulty of creating layouts
+- Allows to distribute space dynamically across elements of an unknown size, hence the term 'flex'
+- Reference (https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
