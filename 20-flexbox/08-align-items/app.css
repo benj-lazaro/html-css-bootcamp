@@ -1,0 +1,35 @@
+/* align-items controls the position of Flex Items along the (top, center or bottom) of the Cross Axis */
+
+/* By default, align-items is set to 'stretch'; Flex Items are stretched along the Cross Axis */
+/* and take up all available space IF Flex Items DOES NOT have a height or width property set */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) */
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 6rem;
+}
+.container {
+  border: 4px solid black;
+  width: 1300px;
+  height: 1000px;
+  margin: 40px auto;
+  /* Enable Flexbox on the container */
+  display: flex;
+  /* Define the Main Axis and direction of the Flex Items */
+  flex-direction: column;
+  /* Pack flush Flex Items onto the center of the Flex Container */
+  justify-content: center;
+  /* Wrap Flex Items along the Main Axis */
+  flex-wrap: wrap;
+  /* Align the Flex Items to the end of the Cross Axis */
+  align-items: center;
+}
+
+.box {
+  width: 150px;
+  height: 240px;
+  font-size: 4rem;
+  text-align: center;
+}
