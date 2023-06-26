@@ -1,0 +1,31 @@
+/* Flexbox Exercise 02 */
+/* Arrange Flex Items to the end of the Main Axis */
+
+/* My Solution */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.container {
+  background-color: #283593;
+  margin: 0 auto;
+  width: 1000px;
+  height: 800px;
+  /* Enable Flexbox in the container */
+  display: flex;
+  /* Define Main Axis and direction of Flex Items */
+  flex-direction: column;
+  /* Justify Flex Items to the end of the Main Axis */
+  justify-content: flex-end;
+}
+
+span {
+  color: white;
+  background-color: #26c6da;
+  font-size: 4rem;
+  width: 400px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 20px;
+}

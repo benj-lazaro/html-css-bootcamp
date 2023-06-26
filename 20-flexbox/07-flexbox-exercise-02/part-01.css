@@ -1,0 +1,31 @@
+/* Flexbox Exercise 02 */
+/* Arrange Flex Items from top to bottom with spaces distributed between each Flex Item */
+
+/* My Solution */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.container {
+  background-color: #283593;
+  margin: 0 auto;
+  width: 1000px;
+  height: 800px;
+  /* Enable Flexbox in the container */
+  display: flex;
+  /* Define Main Axis and direction of Flex Items */
+  flex-direction: column;
+  /* Justify Flex Items along the Main Axis */
+  justify-content: space-between;
+}
+
+span {
+  color: white;
+  background-color: #26c6da;
+  font-size: 4rem;
+  width: 400px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 20px;
+}
