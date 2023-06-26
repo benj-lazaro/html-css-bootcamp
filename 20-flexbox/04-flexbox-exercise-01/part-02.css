@@ -1,0 +1,30 @@
+/* Flexbox Exercise 01 */
+/* Arrange the <span> elements within the <div> with class of "container" into a row */
+/* Reverse the direction of the Flex Items from right to left */
+
+/* My Solution */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.container {
+  background-color: #283593;
+  margin: 0 auto;
+  width: 1000px;
+  height: 800px;
+  /* Enable Flexbox in the container */
+  display: flex;
+  /* Set the Main Axis and direction of the Flex Items */
+  flex-direction: row-reverse;
+}
+
+span {
+  color: white;
+  background-color: #26c6da;
+  font-size: 4rem;
+  width: 400px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 20px;
+}
