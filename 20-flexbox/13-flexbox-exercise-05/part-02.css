@@ -1,0 +1,43 @@
+/* Flexbox Exercise 05 */
+/* Arrange the Flex Items in a column */
+/* Arrange the Flex Items along the Main Axis with spaces in-between items */
+/* Arrange the Flex Items at the center of the Cross Axis */
+/* Position the 3rd Flex Item at the end of the Cross Axis */
+
+/* My Solution */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.container {
+  background-color: #283593;
+  margin: 0 auto;
+  width: 1200px;
+  height: 800px;
+  /* Enable Flexbox on the container */
+  display: flex;
+  /* Set Main Axis and direction of Flex Items */
+  flex-direction: column;
+  /* Align Flex Items along the Main Axis with space in-between */
+  justify-content: space-between;
+  /* NOTE: align-content is NOT defined since the Flex Items are NOT wrapped within the Flex Container */
+  /* Align Flex Items at the center of the Cross Axis */
+  align-items: center;
+}
+
+span {
+  width: 250px;
+  color: white;
+  background-color: #26c6da;
+  font-size: 3rem;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.special {
+  /* Align this Flex Item at the end of the Cross Axis */
+  align-self: flex-end;
+}
