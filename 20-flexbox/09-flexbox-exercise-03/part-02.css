@@ -1,0 +1,34 @@
+/* Flexbox Exercise 03 */
+/* Arrange Flex Items centered along the Main Axis with space around each Flex Item and  */
+/* at the end of the Cross Axis */
+
+/* My Solution */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.container {
+  background-color: #283593;
+  margin: 0 auto;
+  width: 1200px;
+  height: 800px;
+  /* Enable Flexbox on the container */
+  display: flex;
+  /* Set Main Axis and direction of Flex Items */
+  flex-direction: row;
+  /* Center the Flex Items along the Main Axis with spaces around each item */
+  justify-content: space-around;
+  /* Place the Flex Items at the end of the Cross Axis */
+  align-items: flex-end;
+}
+
+span {
+  width: 200px;
+  color: white;
+  background-color: #26c6da;
+  font-size: 3rem;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 20px;
+}
