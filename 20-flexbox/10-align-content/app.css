@@ -1,0 +1,39 @@
+/* align-content controls the space between & around Flex Items along the Cross Axis  */
+
+/* NOTE: Requires multiple columns or rows that are wrapped in order to work */
+/* NOTE: Requires the property 'flex-wrap' */
+/* NOTE: BUT it will NOT WORK for 'flex-wrap: nowrap' */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/align-content) */
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 6rem;
+}
+
+.container {
+  border: 4px solid black;
+  width: 1300px;
+  height: 1000px;
+  margin: 40px auto;
+  /* Enable Flexbox on container */
+  display: flex;
+  /* Define Main Axis and direction of Flex Items */
+  flex-direction: column;
+  /* Center the Flex Items along the Main Axis */
+  justify-content: center;
+  /* Wrap Flex Items within the Flex Container */
+  flex-wrap: wrap;
+  /* Center the Flex Items along the Cross Axis */
+  align-items: center;
+  /* Center the Flex Items along the Cross Axis; remove the space between wrapped Flex Items */
+  align-content: center;
+}
+
+.box {
+  width: 300px;
+  height: 240px;
+  font-size: 4rem;
+  text-align: center;
+}
