@@ -1,0 +1,38 @@
+/* Flexbox Exercise 04 */
+/* Center the Flex Items along the Main Axis and Cross Axis */
+
+/* My Solution */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.container {
+  background-color: #283593;
+  margin: 0 auto;
+  width: 1200px;
+  height: 800px;
+  /* Enable Flexbox on container */
+  display: flex;
+  /* Define Main Axis and direction of Flex Items */
+  flex-direction: row;
+  /* Wrap Flex Items within the Flex Container */
+  flex-wrap: wrap;
+  /* Center Flex Items along the Main Axis */
+  justify-content: center;
+  /* Center Flex Items along the Cross Axis */
+  align-items: center;
+  /* Center Flex Items along the Cross Axis and remove the space in-between the rows */
+  align-content: center;
+}
+
+span {
+  width: 250px;
+  color: white;
+  background-color: #26c6da;
+  font-size: 3rem;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 20px;
+}
