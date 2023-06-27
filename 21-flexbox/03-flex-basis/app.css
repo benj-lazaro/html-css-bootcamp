@@ -1,0 +1,45 @@
+/* flex-basis sets the initial ideal size of a Flex Item */
+/* It sets the size of the content box unless otherwise set with box-sizing (i.e. height / width) */
+
+/* It dynamically sets the width or height of a Flex Item depending on the value of 'flex-direction' */
+/* If 'flex-direction: row' it initially sets the Flex Item's width */
+/* If 'flex-direction: column' it initially sets the Flex Item's height */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis) */
+
+/* flex sets how a Flex Item grows or shrinks to fit the space available in its Flex Container */
+/* flex: <flex-grow> <flex-shrink> <flex-basis> */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/flex) */
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 6rem;
+}
+
+.container {
+  border: 4px solid black;
+  width: 70%;
+  height: 1500px;
+  margin: 40px auto;
+  /* Enable Flexbox in the container */
+  display: flex;
+  /* Define the Main Axis and direction of the Flex Items */
+  flex-direction: row;
+  /* Center the Flex Items along the Main Axis */
+  justify-content: center;
+}
+
+.sidebar {
+  background-color: palevioletred;
+  flex-basis: 200px;
+}
+
+p {
+  background-color: darkseagreen;
+  margin: 0;
+  /* Set the initial size of the Flex Item along the Main Axis */
+  flex-basis: 500px;
+  /* If there is available space in the Flex Container, grow in size and take it */
+  flex-grow: 1;
+}
