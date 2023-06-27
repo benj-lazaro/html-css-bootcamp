@@ -1,0 +1,68 @@
+/* flex is a shorthand on how a Flex Item grows & shrinks to fit the space available in its Flex Container */
+
+/* Syntax: */
+/* flex: <flex-grow> <flex-shrink> <flex-basis> */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/flex) */
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 6rem;
+}
+
+.container {
+  border: 4px solid black;
+  width: 70%;
+  height: 1500px;
+  margin: 40px auto;
+  /* Enable Flexbox in the container */
+  display: flex;
+  /* Define Main Axis and direction of Flex Items */
+  flex-direction: row;
+  /* Center Flex Items along the Main Axis */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.sidebar {
+  background-color: palevioletred;
+  width: 200px;
+  /* Flex Item is sized according to its 'width' & 'height' properties */
+  /* Shrinks to its minimum size but does NOT grow to absorb any extra space in the Flex Container */
+  /* Equivalent to 'flex: 0 1 auto;' */
+  flex: initial;
+
+  /* Set the Flex Item's flex-grow and flex-shrink to '1' & flex-basis to '0' */
+  /* flex: 1; */
+
+  /* Set Flex Item's flex-grow to 1 & flex-basis of 200px */
+  /* flex: 1 200px; */
+}
+
+p {
+  background-color: darkseagreen;
+  margin: 0;
+  width: 500px;
+  /* Flex Item is sized according to its 'width' & 'height' properties */
+  /* It does NOT shrink or grow in relation to the Flex Container */
+  /* Equivalent to 'flex: 0 0 auto;' */
+  /* flex: initial; */
+
+  /* Set the Flex Item's flex-grow and flex-shrink to '1' & flex-basis to '0' */
+  /* Equivalent to 'flex: 1 1 0;' *
+  /* flex: 1; */
+
+  /* Set the Flex Item's flex-grow to 2 & flex-basis to 1000px */
+  /* Equivalent to 'flex: 2 2 1000px;' *
+  /* flex: 2 1000px; */
+
+  /* Automatically grows to absorb free space or shrinks to its minimim size to fit the Flex Container */
+  /* Equivalent to 'flex: 1 1 auto;' */
+  /* flex: auto; */
+
+  /* Flex Item is sized according to its 'width' & 'height' properties */
+  /* Does not grow or shrink the Flex Item in relation to the Flex Container */
+  /* Equivalent to 'flex: 0 0 auto;' */
+  flex: none;
+}
