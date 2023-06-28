@@ -1,0 +1,30 @@
+/* Common Flexbox Use Case: Navigation Bar */
+
+body {
+  /* Disable browser-default margins on all elements */
+  margin: 0;
+}
+
+.navbar {
+  background-color: #37474f;
+  height: 70px;
+  /* Enable Flex in the container */
+  display: flex;
+  /* Set Main Axis and direction of Flex Items */
+  flex-direction: row;
+  /* Align Flex Items along the Main Axis */
+  justify-content: flex-start;
+  /* Align Flex Items along the Cross Axis */
+  align-items: center;
+}
+
+.navlink {
+  color: white;
+  font-size: 2rem;
+  margin: 0 30px;
+}
+
+.right {
+  /* Move this Flex Item to the right of the Navigation Bar */
+  margin-left: auto;
+}
