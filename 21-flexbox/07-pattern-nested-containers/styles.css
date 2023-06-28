@@ -1,0 +1,39 @@
+/* Common Flexbox Use Case: Nested Flexbox Containers */
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #37474f;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink {
+  color: white;
+  font-size: 2rem;
+  /* margin: 0 30px; */
+}
+
+.left {
+  background-color: red;
+  /* Make this Flex Item to a Flex Container (or Flex sub-container) */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Increase the Flex Container's width to visualize the justify-content's arrangement */
+  width: 500px;
+}
+
+.right {
+  background-color: blue;
+  /* Make this Flex Item to a Flex Container (or Flex sub-container) */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* Increase the Flex Container's width to visualize the justify-content's arrangement */
+  width: 500px;
+}
