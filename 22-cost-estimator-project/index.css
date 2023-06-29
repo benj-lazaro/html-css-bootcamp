@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(233, 223, 255);
+  font-family: "Open Sans", sans-serif;
+  /* Enable Flexbox in the HTML document */
+  display: flex;
+  /* Set Main Axis and direction of Flex Items */
+  flex-direction: column;
+  /* Center Flex Items along the Main Axis */
+  justify-content: center;
+  /* Center Flex Items along the Cross Axis */
+  align-items: center;
+  padding: 32px;
+  color: rgb(44, 44, 44);
+}
+
+h1 {
+  color: rgb(83, 49, 156);
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 900px;
+}
