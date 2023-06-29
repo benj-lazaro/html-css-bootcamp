@@ -21,4 +21,44 @@ h1 {
   background-color: white;
   width: 100%;
   max-width: 900px;
+  /* Make this Flex Item into a Flex Container */
+  display: flex;
+  /* Set Main Axis and direction of Flex Items */
+  flex-direction: column;
+  /* Center Flex Items along the Main Axis */
+  justify-content: center;
+  /* Center Flex Items along the Cross Axis */
+  align-items: center;
+  /* Taper the Flex Container's edges */
+  border-radius: 20px;
+}
+
+.tabs {
+  /* Tentatively set the border to serve as a guide for building the container of Top Tabs items */
+  /* border: 1px solid red; */
+  /* Set this Flex Item into a Flex Container */
+  display: flex;
+  /* Set Main Axis and direction of Flex Items */
+  flex-direction: row;
+  /* Set width to 100% of the parent element (i.e. .container) */
+  width: 100%;
+  /* Put spaces around each Flex Item */
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(200, 175, 255);
+}
+
+.tabs p {
+  /* Add padding around each Top Tab item */
+  padding: 16px;
+}
+
+.tabs p:hover {
+  color: rgb(83, 49, 156);
+  cursor: pointer;
+}
+
+.tabs p.active {
+  color: rgb(83, 49, 156);
 }
