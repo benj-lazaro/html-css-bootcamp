@@ -31,10 +31,14 @@ h1 {
   align-items: center;
   /* Taper the Flex Container's edges */
   border-radius: 20px;
+  /* Add padding to the right, bottom & left side of the Flex Container */
+  padding: 0 64px 64px 64px;
+  /* Define position to work with the .line element */
+  position: relative;
 }
 
 .tabs {
-  /* Tentatively set the border to serve as a guide for building the container of Top Tabs items */
+  /* Use border to serve as a guide for building & troubleshooting Top Tabs items */
   /* border: 1px solid red; */
   /* Set this Flex Item into a Flex Container */
   display: flex;
@@ -47,16 +51,30 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(200, 175, 255);
+  /* Create an underline beneath the Top Tabs by increasing the bottom margin by 32 px */
+  margin: 0 0 32px 0;
+  padding: 16px;
 }
 
 .tabs p {
   /* Add padding around each Top Tab item */
-  padding: 16px;
+  padding: 8px;
 }
 
 .tabs p:hover {
   color: rgb(83, 49, 156);
   cursor: pointer;
+}
+
+.line {
+  /* Create an underline that 3px tall */
+  height: 3px;
+  /* As wide as its Flex Container */
+  width: 100%;
+  /* Remove from the document flow & position relative to the Flex Container (.container) */
+  position: absolute;
+  top: 98px;
+  background-color: rgb(231, 231, 231);
 }
 
 .tabs p.active {
