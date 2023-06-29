@@ -66,6 +66,11 @@ h1 {
   cursor: pointer;
 }
 
+.tabs p.active {
+  color: rgb(83, 49, 156);
+  position: relative;
+}
+
 .line {
   /* Create an underline that 3px tall */
   height: 3px;
@@ -77,6 +82,17 @@ h1 {
   background-color: rgb(231, 231, 231);
 }
 
-.tabs p.active {
-  color: rgb(83, 49, 156);
+.tabs .active::before {
+  /* Insert a piece of 'content' before rendering this element */
+  content: "";
+  /* Twice the width of the content */
+  width: 200%;
+  height: 4px;
+  background-color: rgb(72, 39, 156);
+  position: absolute;
+  bottom: -32px;
+  /* Center the underline */
+  left: -50%;
+  z-index: 2;
+  border-radius: 10px;
 }
