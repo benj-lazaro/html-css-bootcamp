@@ -1,0 +1,33 @@
+/* @media () can be used to apply part of a style sheet based on the result of 1 or more media queries */
+/* The @media is HIGHER in the cascade than nornal CSS selectors */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/@media) */
+
+/* Media query allows you to apply specific grouped styles depending on a device's general type */
+/* (print VS screen) or other characteristics such as screen resolution or browser viewport width */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries) */
+
+/* Viewport is the graphical area for something on a computer */
+/* For a website = refers to the browser window minus the browser OI (tabs, search bar, etc.) */
+/* On some devices, viewport = wide as or smaller than the entire screen */
+
+/* Syntax */
+/* @media <media_query_properties> */
+
+body {
+  /* Set background color to red */
+  background-color: red;
+}
+
+/* Change background-color to orange when viewport width reaches 800px */
+@media (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/* Change background-color to yellow when viewport width reaches 1200px */
+@media (min-width: 1200px) {
+  body {
+    background-color: yellow;
+  }
+}
