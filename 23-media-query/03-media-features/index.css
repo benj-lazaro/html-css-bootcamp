@@ -1,0 +1,50 @@
+/* orientation is a keyword value referring to the device's viewport orientation */
+/* Values = portrait & landscape */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation) */
+
+h1 {
+  font-size: 3rem;
+}
+
+/* Increase the element's font-size ONLY when viewed in PRINT preview mode */
+@media only print {
+  h1 {
+    font-size: 10rem;
+  }
+}
+
+body {
+  background-color: red;
+}
+
+/* 
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
+} */
+
+/* Change background-color to yellow when device's viewport orientation is portrait */
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: yellow;
+  }
+
+  /* Add the content 'portrait' before rendering the <h1> element */
+  h1::before {
+    content: "portrait ";
+  }
+}
+
+/* Change background-color to yellow when device's viewport orientation is landscape */
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+
+  /* Add the content 'landscape' before rendering the <h1> element */
+  h1::before {
+    content: "landscape ";
+  }
+}
