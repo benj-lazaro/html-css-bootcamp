@@ -1,0 +1,41 @@
+/* @media only print is intended for paged material & documents viewed on a screen in */
+/* PRINT PREVIEW mode */
+/* Common media types: screen & print */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types) */
+
+/* The 'only' keyword is called a logical operator */
+/* Prevents older browser that DO NOT SUPPORT media queries from applying the defined styles */
+
+/* The 'screen' keyword refers to the media type */
+/* It helps us write styles for different device screen sizes */
+
+/* NOTE: The ORDER of media queries is IMPORTANT */
+
+h1 {
+  font-size: 3rem;
+}
+
+/* Increase the element's font-size ONLY when viewed in PRINT preview mode */
+@media only print {
+  h1 {
+    font-size: 10rem;
+  }
+}
+
+body {
+  background-color: red;
+}
+
+/* Change background-color to orange when device's viewport width reaches 800px */
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/* Change background-color to yellow when device's viewport width reaches 1200px */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: yellow;
+  }
+}
