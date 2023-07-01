@@ -1,49 +1,30 @@
+/* The logical 'and' used for combining multiple media featuer into a single medial query, */
+/* requiring each chained feature to return 'true' for the query to be 'true'. */
+
+/* The logical 'not' returns 'true' if the query would otherwise return 'false' */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/@media) */
+
 h1 {
   font-size: 3rem;
 }
-
-/* @media only print {
-  h1 {
-    font-size: 10rem;
-  }
-} */
 
 body {
   background-color: red;
 }
 
-/* @media (max-width: 600px) or (min-width: 1500px) {
+/* Change the backgound-color to lightcoral when the device's viewport WIDTH is */
+/* less than 600px OR greater than 1500px; otherwise load background-color of red */
+@media (max-width: 600px) or (min-width: 1500px) {
   body {
-    background-color: purple;
-  }
-} */
-
-/* Do NOT load the following style if the viewport width >= 600px */
-@media not (min-width: 600px) {
-  body {
-    background-color: purple;
+    background-color: lightcoral;
   }
 }
 
-/* @media only screen and (orientation: portrait) {
+/* Change the background-color to purple when the device's viewport WIDTH is */
+/* NOT greater than 600px */
+/* @media not (min-width: 600px) {
   body {
-    background-color: yellow;
-  }
-  h1::before {
-    content: "portrait";
-  }
-}
-@media only screen and (orientation: landscape) {
-  body {
-    background-color: blue;
-  }
-  h1::before {
-    content: "landscape";
-  }
-} */
-/* 
-@media only screen and (min-width: 800px) {
-  body {
-    background-color: orange;
+    background-color: purple;
   }
 } */
