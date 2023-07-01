@@ -1,0 +1,49 @@
+h1 {
+  font-size: 3rem;
+}
+
+/* @media only print {
+  h1 {
+    font-size: 10rem;
+  }
+} */
+
+body {
+  background-color: red;
+}
+
+/* @media (max-width: 600px) or (min-width: 1500px) {
+  body {
+    background-color: purple;
+  }
+} */
+
+/* Do NOT load the following style if the viewport width >= 600px */
+@media not (min-width: 600px) {
+  body {
+    background-color: purple;
+  }
+}
+
+/* @media only screen and (orientation: portrait) {
+  body {
+    background-color: yellow;
+  }
+  h1::before {
+    content: "portrait";
+  }
+}
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: blue;
+  }
+  h1::before {
+    content: "landscape";
+  }
+} */
+/* 
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: orange;
+  }
+} */
