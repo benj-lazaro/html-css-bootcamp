@@ -1,0 +1,46 @@
+/* Common Responsive Breakpoints */
+/* Breakpoint refers to the viewport's width (or height) of a device */
+
+/* NOTE: Breakpoints are a GENERAL RULE of thumb and NOT hard rules */
+/* Test layouts on various breakpoints thoroughly */
+
+/* Mobile = 0 to 480px */
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+  /* Write the pseudo element content prior to rendering the succeeding element within the <body> */
+  body::before {
+    content: "MOBILE SIZE";
+  }
+}
+
+/* Tablet = 481px to 768px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: orange;
+  }
+  body::before {
+    content: "TABLET SIZE";
+  }
+}
+
+/* Small Desktop (netbook) = 769px to 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: yellow;
+  }
+  body::before {
+    content: "SMALL DESKTOP SIZE";
+  }
+}
+
+/* Large desktop = 1025px and above */
+@media only screen and (min-width: 1025px) {
+  body {
+    background-color: green;
+  }
+  body::before {
+    content: "LARGE DESKTOP SIZE";
+  }
+}
