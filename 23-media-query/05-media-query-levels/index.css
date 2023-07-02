@@ -1,0 +1,33 @@
+/* Media Query Level */
+/* Levels are similar to version release or updates to CSS */
+/* Reference (https://www.w3.org/TR/mediaqueries-3/) */
+/* Reference (https://www.w3.org/TR/mediaqueries-4/) */
+/* Reference (https://www.w3.org/TR/mediaqueries-5/) */
+
+/* Media Query Level 3 = supported by current browsers */
+/* Media Query Level 4 = selectively supported by current browsers */
+/* Media Query Level 5 = new features that are NOT widely supported by current browsers */
+
+/* Table that showcase supported Media Query features & keywords by browser */
+/* Refenrece (https://developer.mozilla.org/en-US/docs/Web/CSS/@media) */
+
+/* @media feature width is used to test the width of the device's viewport */
+/* It is a range feature that can also use the prefixed 'min-width' and 'max-width' */
+/* variants to query minimum and maximum values, respectively */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/@media/width) */
+
+h1 {
+  font-size: 3rem;
+}
+
+body {
+  background-color: red;
+}
+
+/* NOTE: NOT all Media Query Level 4 features are fully supported by modern browsers */
+/* Change the background-color with olive if the viewport width is greater than & equal to 800px */
+@media (width >= 800px) {
+  body {
+    background-color: olive;
+  }
+}
