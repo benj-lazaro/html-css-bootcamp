@@ -1,0 +1,29 @@
+/* Media Query Exercise */
+/* Reference (https://codepen.io/Colt/pen/abjaVQq) */
+
+/* 
+Give the h1 the following font sizes:
+- for screen sizes below 800 pixels: 3rem
+- for screen sizes between 800 and 1000 pixels: 5rem
+- for screen sizes above 1000 pixels: 7rem
+*/
+
+/* My Solution */
+/* For viewport width of less than 800px */
+h1 {
+  font-size: 3rem;
+}
+
+/* For viewport width of greater than 800px */
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/* For viewport width of greater than 1000px */
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
