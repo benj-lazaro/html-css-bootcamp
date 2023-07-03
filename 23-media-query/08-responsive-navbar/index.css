@@ -1,0 +1,50 @@
+/* Responsive Navbar Demo */
+
+/* Enable Flexbox for the navbar */
+/* Set the Main Axis and direction of Flex Items */
+/* Place space between each Flex Item */
+/* Center Flex Items along the Cross Axis */
+/* Set a 40px padding on the left and right side of the navbar */
+.navbar {
+  background-color: slateblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+/* Set a 20px margin on the left and right side of each Flex Item */
+.navbar a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 20px;
+}
+
+/* Configure container into a nested Flex Container */
+/* So that its Main Axis can be re-configured for smaller viewport width */
+.links {
+  display: flex;
+}
+
+/* Re-adjust the left and right margin of each Flex Item for small desktop's viewport */
+@media only screen and (max-width: 769px) {
+  .navbar a {
+    margin: 0 5px;
+  }
+}
+
+/* Change the Main Axis and direction of Flex Items for mobile device's viewport */
+@media only screen and (max-width: 480px) {
+  /* Change the navbar's Main Axis and direction of Flex Items */
+  .navbar {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  /* Center Flex Items along the Main Axis */
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
