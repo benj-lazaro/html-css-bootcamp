@@ -1,0 +1,25 @@
+Desktop First
+-------------
+- A design / development approach in which you build a website to work on desktop
+- Then make it responsive for smaller devices & screen sizes after
+
+Pros
+- Build complex features of the website first then pare it down for mobile
+- It allows to put more features and stuff on the website
+
+
+Mobile First
+------------
+- A design philisophy that emphasizes designing/building the mobile experience for a website
+- Then adding in layout customizations for larger viewports after
+
+Pros
+- Forces to consider the core, essential pieces of the User Experience (UX)
+- Design for limited screen space, slower internet, connection, computing power, etc
+- From there, add more complexity on larger devices with more screen estate
+
+
+Bottom Line
+-----------
+- What matters MOST is to make a website responsive for desktop and mobile
+- How to get there or start ias NOT as IMPORTANT
