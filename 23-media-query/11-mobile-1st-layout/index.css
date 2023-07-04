@@ -1,0 +1,49 @@
+/* Simple Mobile First Design Loyout */
+
+/* Start as a column stacked up layout with no Flexbox */
+header,
+footer {
+  background-color: purple;
+  height: 200px;
+}
+
+article {
+  background-color: teal;
+  height: 400px;
+}
+
+aside {
+  background-color: aquamarine;
+  height: 400px;
+}
+
+/* Change layout for small desktop (Netbook) */
+@media only screen and (min-width: 1000px) {
+  /* Enable Flexbox in the container (i.e. <main>) */
+  main {
+    display: flex;
+  }
+
+  /* Flex Item to consume 70% of the Flex Container space */
+  article {
+    flex: 1 1 70%;
+  }
+
+  /* Flex Item to consume 30% of the Flex Container space */
+  aside {
+    flex: 1 1 30%;
+  }
+}
+
+/* Adjust layout for desktop */
+@media only screen and (min-width: 1500px) {
+  /* Flex Item to increase space consumption by 80% of the Flex Container space */
+  article {
+    flex: 1 1 80%;
+  }
+
+  /* Flex Item to increase space consumption by 20% of the Flex Container space */
+  aside {
+    flex: 1 1 20%;
+  }
+}
