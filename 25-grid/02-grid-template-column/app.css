@@ -1,0 +1,28 @@
+/* grid-template-columns defines the number & individual size of each column in a Grid Container */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) */
+
+/* NOTE: The 'fr' value consumes available space in the Grid Container */
+
+.container {
+  height: 700px;
+  width: 900px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+
+  /* Create a 4-column grid, each column with sizes of */
+  /* 1st column = 100px, 2nd column = 1fr, 3rd column = 2fr & 4th column = 100px */
+  /* grid-template-columns: 100px 1fr 2fr 100px; */
+
+  /* Create a 2-column grid of uneven sizes wherein */
+  /* The 1st column is 3x times as large as the 2nd column */
+  grid-template-columns: 3fr 1fr;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
