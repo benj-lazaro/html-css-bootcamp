@@ -1,0 +1,41 @@
+/* CSS Grid excels at dividing a page into major regions */
+/* Define relationships in terms of size, position & layer between parts of a control */
+/* built from HTML primitives */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) */
+
+/* 'display: grid' enables Grid in a container */
+/* 'display: inline-grid' enables Grid but behaves like an inline element to neighboring elements */
+/* and lays out its content (Grid Items) according to the grid model */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/display) */
+
+/* NOTE: Grid Containers work with rows AND columns */
+/* NOTE: Flexbox Containers work with rows OR columns */
+
+/* grid-template-rows defines how many rows in a Grid Container */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows) */
+
+/* grid-template-columns defines how many columns in a Grid Container */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) */
+
+/* The value 'fr' stands for fraction */
+/* It represents an even portion of the grid, removes the need to calculate % of widths */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define a 2-column grid */
+  grid-template-columns: 1fr 1fr;
+  /* Define a 3-column grid */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
