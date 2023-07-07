@@ -1,0 +1,21 @@
+/* grid-template-rows defines the number & individual size of each row in a Grid Container */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the Grid Container */
+  display: grid;
+  /* Define a 2-columns of equal sizes */
+  grid-template-columns: 1fr 1fr;
+  /* Define a 4-rows unequal sizes; even rows consume twice the space than the odd rows */
+  grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
