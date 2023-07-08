@@ -1,0 +1,27 @@
+/* grid-template is a shorthand for grid-template-columns, grid-template-rows and */
+/* grid-template-areas */
+
+/* It accepts <row values> / <column values> */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template) */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr; */
+  /* grid-template: 1fr 1fr / 1fr 1fr 1fr; */
+
+  /* Grid of 3 rows & 2 columns; with the 2nd column twice the size of the 1st column */
+  grid-template: 1fr 1fr 1fr / 1fr 2fr;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
