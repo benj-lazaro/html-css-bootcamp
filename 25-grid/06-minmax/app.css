@@ -1,0 +1,35 @@
+/* minmax() function defines a minimum & maximum value for the width of a column should span */
+/* oe the height a row should span */
+
+/* Syntax: */
+/* minmax(<minimum_value>, <maximum_value>) */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/minmax) */
+
+/* NOTE: Common convention is to set a fixed minimum value & a scalable maximum value */
+/* NOTE: Grid Items will continue to shrink until its meets its definedm minimum value */
+
+/* NOTE: Content will overflow if it exceeds the defined minmax() values */
+/* Use 'auto' for the maximum value to accomodate the size of the content dynamically */
+
+.container {
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define a 2-column gris */
+  /* 1st column has a minimum width of 500px up to the maximum of 2fr */
+  /* 2nd column has a minimum width of 500px up to the maximum of 1fr */
+  /* grid-template-columns: minmax(500px, 2fr) minmax(500px, 1fr); */
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px, auto);
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
