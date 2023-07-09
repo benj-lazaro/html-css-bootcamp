@@ -1,0 +1,24 @@
+/* repeat() function defines columns or rows with certain values with ease */
+/* NOTE: Useful if individual columns and/or rows have equal sizes */
+
+/* Syntax */
+/* repeat(<repeat_number>, <size>) */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/repeat) */
+
+.container {
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  display: grid;
+  /* Define a Grid of 2 equal rows (1fr) & 5 equal columns (100px min & 250px max) */
+  grid-template: repeat(2, 1fr) / repeat(5, minmax(100px, 250px));
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
