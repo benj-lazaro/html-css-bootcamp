@@ -1,0 +1,26 @@
+/* fit-content() tells a Grid Track to be as wide or tall as its content */
+/* BUT with a maximum value that it should NOT exceed */
+
+/* Syntax: */
+/* fit-content(<maximum_value>) */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content) */
+
+.container {
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid on the container */
+  display: grid;
+  /* Define a 3-grid column */
+  /* Each column will be as wide as its content but does NOT EXCEED 300px */
+  grid-template-columns: fit-content(300px) fit-content(300px) fit-content(300px);
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
