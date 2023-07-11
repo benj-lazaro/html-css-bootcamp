@@ -1,0 +1,49 @@
+/* grid-column-start specifies a Grid Item's start position within the Grid column */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start) */
+
+/* grid-column-end specifies a Grid Item's end position within the Grid column */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end) */
+
+/* grid-row-start specifies a Grid Item's start position within the Grid row */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start) */
+
+/* grid-row-end specifies a Grid Item's end position within the Grid row */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end) */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define a grif of 4 rows & 4 columns, each Grid Item of equal size (1fr) */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Position this Grid Item beginning at column 4 and ends at column 5 */
+/* Position this Grid Item beginning at row 3 and ends at row 4 */
+/* Effectively taking up a single grid track (column & row) */
+.first {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* Position this Grid Item beginning at column 2 */
+/* Position this Grid Item beginning at row 2 and ends at row 4 */
+/* Effectively taking up two grid tracks (spans two rows) */
+.second {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
