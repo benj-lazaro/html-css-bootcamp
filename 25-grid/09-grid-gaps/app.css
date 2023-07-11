@@ -1,0 +1,34 @@
+/* gap is a shorthand for column-gap and row-gap that controls the space BETWEEN Grid Items */
+/* grid-gap is an alias for gap */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/gap) */
+
+/* Syntax: */
+/* gap: <row-gap> <column-gap> */
+/* gap: <single value = applies for both row & column> */
+
+.container {
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define a Grid of 2-rows and 4-columns of equal size (1fr) */
+  grid-template: 1fr 1fr / repeat(4, 1fr);
+  /* Define gaps between the columns of Grid Items */
+  /* column-gap: 20px; */
+
+  /* Define gaps between the rows of Grid Items */
+  /* row-gap: 30px; */
+
+  /* Use shorthand method for a 10px row-gap and 40px column-gap */
+  /* grid-gap: 10px 40px; */
+  gap: 10px 40px;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
