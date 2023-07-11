@@ -1,0 +1,26 @@
+/* Grid lines are created when define Grid Item(s) in a Grid Container */
+
+/* Grid lines are label using their number (starts with 1) */
+/* In the left-to-right language (English), column line 1 is located on the left of the grid */
+/* row line 1 is located on top of the grid */
+
+/* NOTE: Orientation of Grid lines is REVERSED on a right-to-left language */
+/* Reference (https://developer.mozilla.org/en-US/docs/Glossary/Grid_Lines) */
+
+.container {
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
