@@ -1,0 +1,41 @@
+/* grid-area is a shorthand that specifies the size & location of a Grid Item w/in the Grid Container */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area) */
+
+/* Syntax: */
+/* grid-area: <grid-row-start> / <grid-column-start> / <grid-row-end> / <grid-column-end> */
+
+/* Other shorthand: */
+/* grid-column: <grid-column-start> / <grid-column-end> */
+/* grid-row: <grid-row-start> / <grid-row-end> */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define a Grid with 4-columns and rows of equal size (1fr) */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Position this Grid Item that starts with column 2 & ends at column 4; spans 2 columns */
+/* Position this Grid Item that starts with row 2 & spans 2 rows */
+.first {
+  grid-column: 2 / 4;
+  grid-row: 2 / span 2;
+}
+
+/* Position this Grid Item that starts at row 4 and ends at row 5; spanning 1 row */
+/* Position this Grid Item that starts at column 1 and ens at column 4; spanning 3 columns */
+.second {
+  grid-area: 4 / 1 / 5 / 4;
+}
