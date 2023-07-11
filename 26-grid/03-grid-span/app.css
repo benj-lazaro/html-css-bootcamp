@@ -1,0 +1,31 @@
+/* The 'span' value specifies how many columns / rows a Grid Item should span (consume) */
+/* Often assigned as value to the properties grid-column-end or grid-row-end */
+
+/* NOTE: By default, it starts in the 1st column / row */
+/* NOTE: The span <number> refers to the Grid Tracks, NOT Grid Lines */
+
+/* Grid Track = refers to the space in the Grid Container that is consumed by the Grid Item */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.second {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
