@@ -1,0 +1,27 @@
+/* grid-auto-rows specifies the size of an implicity-created Grid Row Track */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows) */
+
+/* grid-auto-columns specifies the size of an implicity-created Grid Column Track */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns) */
+
+.container {
+  width: 800px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define a 2-row and 4-column Grid Container of equal sizes (200px) */
+  grid-template: repeat(2, 200px) / repeat(4, 200px);
+  /* Define the flow of Grid Items w/in the Grid Container */
+  grid-auto-flow: row;
+  /* Define the size of implicitly added Grid Items to the Grid Container */
+  grid-auto-rows: 200px;
+  /* grid-auto-columns: 200px; */
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
