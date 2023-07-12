@@ -1,0 +1,35 @@
+/* grid-auto-flow controls how the auto-placement algorithm works */
+/* It tells the Grid Container how and where to add new Grid Items */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow) */
+
+/* By default, grid-auto-flow is set to 'row' */
+
+/* 'column' Grid Items are placed by filling each column */
+
+/* 'dense' tells the Grid Container to pack / position the next Grid Item to */
+/* an earlier empty space (if they exists) that it would fit in */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define the rows and columns of the Grid Container */
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  /* Define the flow of Grid Items w/in the Grid Container */
+  grid-auto-flow: column dense;
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Move this Grid Item to the 2nd row */
+.first {
+  grid-row-start: 2;
+}
