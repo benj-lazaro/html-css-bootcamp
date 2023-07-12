@@ -1,0 +1,30 @@
+/* If the Grid Container has a width and/or height... */
+
+/* 'auto-fill' will use the largest number of repetitions (Grid Items) w/out causing the items */
+/* to overflow the Grid Container */
+
+/* 'auto-fit' is the same EXCEPT after placing the Grid Items, make the size of the Grid Items */
+/* grow and consume the available space in the Grid Container */
+
+.container {
+  height: 700px;
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Inform the browser to 'fill' as many Grid Columns it could w/out causing an overflow */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Informs the browser to 'fit' as many Grid columns it could fit w/in the Grid Container */
+.fit {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
