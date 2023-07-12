@@ -1,0 +1,52 @@
+/* grid-template-areas is a shorthand to setup a Grid Container visually */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) */
+
+/* grid-area is 1 or more Grid Items that make up a rectangular area on the Grid Container */
+/* Grid Area MUST in a continuous box */
+/* Reference (https://developer.mozilla.org/en-US/docs/Glossary/Grid_Areas) */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+
+  /* Define the Grid Container & Grid Items' sizes; then position them w/in the container */
+  /* NOTE: USE quotes when defining the name for the Grid Items */
+  /* Grid Area 'a' spans 2 columns & 2 rows */
+  /* Grid Area 'b' spans 2 columns & 1 row */
+  /* Grid Area 'c' spans 1 column & 3 rows */
+  /* grid-template-areas:
+    "a a c"
+    "a a c"
+    "b b c"; */
+
+  /* Define Grid Container & Grid Items' sizes; then position them w/in the container */
+  grid-template-areas:
+    "sidebar main main aside"
+    "sidebar main main aside"
+    "sidebar main main aside";
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Assign Grid Items to their corresponding Grid Areas */
+/* NOTE: Do NOT USE quotes when assigning a value for grid-area */
+.first {
+  grid-area: sidebar;
+}
+
+.second {
+  grid-area: main;
+}
+
+.third {
+  grid-area: aside;
+}
