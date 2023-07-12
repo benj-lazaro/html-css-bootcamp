@@ -1,0 +1,50 @@
+/* Using grid-template-areas along with grid-template-columns and grid-template-rows */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define columns of the Grid Container */
+  grid-template-columns: 1fr 1fr 150px;
+  /* Define rows of the Grid Container */
+  grid-template-rows: 100px 1fr 100px;
+
+  /* Map out the defined columns and rows in the Grid Area */
+  /* 'navbar' spans 3 columns of the 1st row */
+  /* 'main' spans 2 columns of the 2nd row */
+  /* 'sidebar' span 1 column of the 2nd row */
+  /* 'footer' span 1 column (middle column) of the 3rd row */
+
+  /* NOTE: Use '.' as placeholder for empty space(s) in the Grid Areas */
+  grid-template-areas:
+    "navbar navbar navbar"
+    "main main sidebar"
+    ". footer .";
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Assign Grid Items according to their position in the defined Grid Areas */
+.first {
+  grid-area: navbar;
+}
+
+.second {
+  grid-area: main;
+}
+
+.third {
+  grid-area: sidebar;
+}
+
+.fourth {
+  grid-area: footer;
+}
