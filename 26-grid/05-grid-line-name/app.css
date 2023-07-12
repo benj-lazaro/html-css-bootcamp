@@ -1,0 +1,33 @@
+/* Grid line can be assigned with names */
+/* When defining a Grid Container, embed names w/in [] */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_named_grid_lines) */
+
+/* Syntax: */
+/* grid-template-column: [<name>] <size> [<name>] <size> [<name>] <size> ... */
+
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: black;
+  box-shadow: 0 6px 20px rgba(227, 183, 183, 0.2);
+  /* Enable Grid in the container */
+  display: grid;
+  /* Define a Grid Container of 3-columns and 2-rows of equal sizes */
+  grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+  grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end];
+}
+
+.box {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Position this Grid Item at column 2 start and column 3 end; spanning 2 (column) Grid Tracks */
+/* Position this Grid Item at row 2 start */
+.first {
+  grid-column-start: col2-start;
+  grid-column-end: col3-end;
+  grid-row-start: row2-start;
+}
