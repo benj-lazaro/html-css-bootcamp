@@ -5,8 +5,7 @@ body {
 
 /* Setup the parent element that holds the <img> element */
 .project {
-  margin-top: 300px;
-  width: 600px;
+  /* width: 600px; */
   position: relative;
 }
 
@@ -47,4 +46,11 @@ body {
 .project .overlay:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+/* Setup the parent element as a Grid Container holding the elements where the images are stored */
+.project-grid {
+  display: grid;
+  /* Test to check if Grid is working */
+  grid-template-columns: 400px 400px 1fr;
 }
