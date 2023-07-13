@@ -48,9 +48,53 @@ body {
   cursor: pointer;
 }
 
-/* Setup the parent element as a Grid Container holding the elements where the images are stored */
+/* Setup the parent element as a Grid Container that holds the elements storing the images  */
 .project-grid {
   display: grid;
-  /* Test to check if Grid is working */
-  grid-template-columns: 400px 400px 1fr;
+  /* Layout of the corresponding element with images w/in the Grid Container */
+  grid-template-areas:
+    "eth eth alphabet"
+    "eth eth traveler"
+    "cube astro traveler"
+    "cup insta insta"
+    "cup insta insta"
+    "foam foam dimensional"
+    "foam foam dimensional";
+}
+
+/* Assign the Gris Area name to the corresponding <div> element holding an image */
+#eth {
+  grid-area: eth;
+}
+
+#alphabet {
+  grid-area: alphabet;
+}
+
+#traveler {
+  grid-area: traveler;
+}
+
+#cube {
+  grid-area: cube;
+}
+
+#astro {
+  grid-area: astro;
+}
+
+#cup {
+  grid-area: cup;
+}
+
+#insta {
+  grid-area: insta;
+}
+
+#foam {
+  grid-area: foam;
+}
+
+#dimensional {
+  grid-area: dimensional;
 }
