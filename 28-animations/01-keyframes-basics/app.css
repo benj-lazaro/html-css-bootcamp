@@ -1,0 +1,57 @@
+/* @keyframes controls the intermediate steps in an animation sequence */
+/* It define styles for keyframes (or waypoints) */
+
+/* There are 2 steps in CSS anitmation */
+/* 1. Declare the animation using @keyframes */
+/* 2. Activate using animation related properties such as: */
+/* animation-name & animation-duration */
+
+/* Syntax: */
+/* @keyframes <identifier> {
+    from {
+      <animation_property>
+    }
+
+    to {
+      <animation_property>
+    }
+
+} */
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: orangered;
+  color: white;
+  font-size: 2rem;
+  /* Set element as a Flexbox Container */
+  display: flex;
+  /* Center the text horizontally & vertically within the Flexbox Container */
+  justify-content: center;
+  align-items: center;
+  /* Apply the defined animation */
+  animation-name: spin;
+  animation-duration: 2s;
+}
+
+/* Define the animation that changes background-color of an element */
+/* @keyframes colorchange {
+  from {
+    background-color: pink;
+  }
+
+  to {
+    background-color: cyan;
+  }
+} */
+
+/* Define animation that rotates the element 360 degrees */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
