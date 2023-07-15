@@ -1,0 +1,109 @@
+/* animation-direction sets whether an animation plaus foward, backward or */
+/* alternative back & forth between playing the sequence */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction) */
+
+/* animation-iteration-count sets the number of times an animation sequence should */
+/* play before before stopping */
+/* Default value is '1' */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count) */
+
+/* animation-timing-function sets how an animation progresses through the duration */
+/* of each cycle */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function) */
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: orangered;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  /* animation-delay: 2s; */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    background-color: purple;
+  }
+  25% {
+    transform: translateX(500px);
+  }
+  75% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(200px);
+    background-color: magenta;
+  }
+}
+
+@keyframes bounce {
+  0% {
+  }
+  6% {
+    transform: translateY(0px);
+  }
+  7% {
+    transform: translateY(-6px);
+  }
+  9% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-1px);
+  }
+  11% {
+    transform: translateY(0px);
+  }
+  100% {
+  }
+}
+/* @keyframes colorchange {
+  from {
+    background-color: pink;
+  }
+  to {
+    background-color: cyan;
+  }
+} */
+
+/* @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* @keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: violet;
+  }
+} */
