@@ -1,0 +1,32 @@
+/* Create a simple spinner animation */
+
+body {
+  /* Enable Flexbox on the document */
+  display: flex;
+  /* Center Flex Item horizontally & vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  /* Turn the element into a visible circle */
+  border-radius: 50%;
+  border: 12px solid #cfd8dc;
+  /* Change top border color to help perceive the circle is spinning */
+  border-top-color: #3f51b5;
+  animation: 1s spin infinite ease-in-out;
+}
+
+/* Define animation keyframes */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
