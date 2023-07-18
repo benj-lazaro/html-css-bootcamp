@@ -1,0 +1,49 @@
+body {
+  /* Enable Flexbox in the document */
+  display: flex;
+  /* Center Flex Item */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  margin: 0 10px;
+}
+
+/* Assign and set animation for the 1st <span> element */
+.loader span:nth-child(1) {
+  animation: 1s jump infinite ease-in-out;
+}
+
+/* Assign and set animation for the 2nd <span> element */
+/* NOTE: The 2nd numerical value represents delay */
+.loader span:nth-child(2) {
+  animation: 1s 0.333s jump infinite ease-in-out;
+}
+
+/* Assign and set animation for the 3rd <span> element */
+.loader span:nth-child(3) {
+  animation: 1s 0.666s jump infinite ease-in-out;
+}
+
+/* Define animation keyframes */
+@keyframes jump {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  /* Move position of element along the Y-axis by -20px & enlarge it by a scale of 1.2 */
+  30% {
+    transform: translateY(-20px) scale(1.2);
+  }
+
+  75% {
+    transform: translateY(0) scale(1);
+  }
+}
