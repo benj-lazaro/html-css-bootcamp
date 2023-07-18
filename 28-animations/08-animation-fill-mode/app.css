@@ -1,0 +1,47 @@
+/* animation-fill-mode sets how an animation applies styles to its target */
+/* before and after its execution */
+
+/* Basically it applies the CSS styling even after the animation completed its execution */
+/* NOTE: Optional animation-delay property to see implementation of the animation-fill-mode */
+
+/* The value 'both' immediately applies the properties of the starting keyframe */
+/* followed by the implementation of the properties in the ending keyframe */
+/* It does NOT restart the animation by reverting the element back to its initial state */
+
+/* The value 'forwards' applies the properties of the starting keyframe after a delay */
+/* followed by the implementation of the properties in the ending keyframe */
+/* It does NOT restart the animation by reverting the element back to its initial state */
+
+/* The value 'backwards' immediately applies the properties of the starting keyframe */
+/* regardless of the animation-dely property followed by the implementation of the properties  */
+/* in the ending keyframe and resets the element back to its initial state */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode) */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: tomato;
+  height: 200px;
+  width: 200px;
+  animation: 2s move ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+@keyframes move {
+  0% {
+    background-color: hotpink;
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(300px);
+    background-color: olive;
+  }
+}
