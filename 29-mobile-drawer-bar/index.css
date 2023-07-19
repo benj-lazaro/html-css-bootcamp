@@ -199,6 +199,12 @@ body {
   animation: flipBar3 1s infinite;
 }
 
+/* For JavaScript testing ONLY */
+.purple {
+  background-color: purple;
+  transform: scale(2);
+}
+
 @keyframes flipBar1 {
   from {
     transform: rotate(0);
