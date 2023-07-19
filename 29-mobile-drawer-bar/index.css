@@ -1,0 +1,278 @@
+/* Setup the document */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Set the container that holds both navbar and grid images */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Set navigation bar as a Flex Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.navbar .left {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navbar .right {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .right a:hover {
+  text-decoration: underline;
+}
+
+.navbar .right img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Setup hamburger icon */
+.navbar .hamburger {
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+.navbar .bar {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+/* Setup the parent element that holds the <img> element */
+.project {
+  /* width: 600px; */
+  position: relative;
+}
+
+/* Make <img> element as wide & tall as the parent element and covers the parent element */
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Setup the overlay text & transparency that is on top of the <img> element */
+.project .overlay {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Remove the element from the document flow */
+  position: absolute;
+  /* Position the element on the top-left of the parent element */
+  top: 0;
+  left: 0;
+  /* Make the element as wide & tall as it's parent element */
+  width: 100%;
+  height: 100%;
+  /* Enable Flexbox in the container */
+  display: flex;
+  /* Center the element's text in the middle horizontally & vertically */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* Make the overlay disappear from the document */
+  opacity: 0;
+  /* Setup the transition to make the overlay appear/disappear smoother */
+  transition: all 0.2s ease;
+}
+
+/* Make the overlay appear when hovered over */
+.project .overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Setup the parent element as a Grid Container that holds the elements storing the images  */
+.project-grid {
+  display: grid;
+  /* Layout of the corresponding element with images w/in the Grid Container */
+  grid-template-areas:
+    "eth eth alphabet"
+    "eth eth traveler"
+    "cube astro traveler"
+    "cup insta insta"
+    "cup insta insta"
+    "foam foam dimensional"
+    "foam foam dimensional";
+  /* Implement a gap between images */
+  grid-gap: 16px;
+  /* Set the image grid to consume the entirety of the container */
+  width: 100%;
+}
+
+/* Assign the Gris Area name to the corresponding <div> element holding an image */
+#eth {
+  grid-area: eth;
+}
+
+#alphabet {
+  grid-area: alphabet;
+}
+
+#traveler {
+  grid-area: traveler;
+}
+
+#cube {
+  grid-area: cube;
+}
+
+#astro {
+  grid-area: astro;
+}
+
+#cup {
+  grid-area: cup;
+}
+
+#insta {
+  grid-area: insta;
+}
+
+#foam {
+  grid-area: foam;
+}
+
+#dimensional {
+  grid-area: dimensional;
+}
+
+.overlay.white {
+  color: white;
+}
+
+/* Setup footer */
+.footer {
+  text-align: center;
+  padding: 64px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1100px) {
+  .project-grid {
+    grid-template-areas:
+      "eth eth"
+      "alphabet traveler"
+      "cube astro"
+      "insta insta"
+      "cup foam"
+      "dimensional dimensional";
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Hamburger Menu Anitmation */
+.hamburger .bar:nth-child(1) {
+  animation: flipBar1 1s infinite;
+}
+
+.hamburger .bar:nth-child(2) {
+  animation: fadeBar2 1s infinite;
+}
+
+.hamburger .bar:nth-child(3) {
+  animation: flipBar3 1s infinite;
+}
+
+@keyframes flipBar1 {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+
+@keyframes fadeBar2 {
+  from {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes flipBar3 {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-45deg) translate(4px, -10px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-areas:
+      "eth eth"
+      "alphabet alphabet"
+      "traveler traveler"
+      "cube astro"
+      "insta insta"
+      "cup cup"
+      "foam foam"
+      "dimensional dimensional";
+    margin-top: 100px;
+  }
+
+  .project .overlay {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 32px;
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding: 16px 24px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar .right {
+    display: none;
+  }
+}
