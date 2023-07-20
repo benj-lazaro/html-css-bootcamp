@@ -1,0 +1,26 @@
+blockquote {
+  font-size: 3rem;
+  font-style: italic;
+  width: 50%;
+  position: relative;
+}
+
+/* Set decorative quotes */
+blockquote::after,
+blockquote::before {
+  font-size: 6rem;
+  position: absolute;
+}
+
+/* Position decorative opening & closing quotes that encloses the <blockquote> elements */
+blockquote::before {
+  content: open-quote;
+  top: -50px;
+  left: -50px;
+}
+
+blockquote::after {
+  content: close-quote;
+  bottom: -100px;
+  right: -30px;
+}
