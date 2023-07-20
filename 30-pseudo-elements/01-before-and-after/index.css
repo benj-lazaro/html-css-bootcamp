@@ -1,0 +1,33 @@
+/* Pseudo element is a keyword added to a selector that allows to style */
+/* a specific part of the selected element(s) */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) */
+
+/* ::before creates a pseudo-element that is the 1st child of the selected element */
+/* It is used to add cosmetic content to an element with the 'content' property */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/::before) */
+
+/* ::after creates a pseudo-element that is the last child of the selected element */
+/* It is used to add cosmetic content to an element with the 'content' property */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/::after) */
+
+/* ::before & ::after oftenly used to insert content onto a page via CSS w/o it */
+/* needing to be in the HTML document */
+
+h1 {
+  font-size: 5rem;
+}
+
+/* Add new content before the CONTENT of the selected element <h1> */
+h1::before {
+  /* content: "Before! "; */
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: purple;
+  display: inline-block;
+}
+
+/* Add new content after the CONTENT of the selected element <h1> */
+h1::after {
+  content: " After!";
+}
