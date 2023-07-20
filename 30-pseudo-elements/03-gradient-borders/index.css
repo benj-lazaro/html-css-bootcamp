@@ -1,0 +1,35 @@
+/* Add decorative gradient color borders (before &) around content of the targeted element */
+
+body {
+  display: flex;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.box {
+  background: black;
+  color: white;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: sans-serif;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Render a decorative gradient layer that mimic a border around the content */
+.box::before {
+  content: "";
+  height: 306px;
+  width: 306px;
+  background: linear-gradient(cyan, magenta);
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: -1;
+}
