@@ -155,9 +155,11 @@ body {
 
 /* Hamburger icon UI */
 .navbar .hamburger {
-  height: 50px;
-  width: 50px;
   display: none;
+}
+
+.navbar .hamburger:hover {
+  cursor: pointer;
 }
 
 .bar1,
@@ -172,17 +174,17 @@ body {
 
 /* Hamburger icon anitmation */
 .animateBar1 {
-  animation: flipBar1 1s;
+  animation: flipBar1 0.5s;
   animation-fill-mode: forwards;
 }
 
 .animateBar2 {
-  animation: fadeBar2 1s;
+  animation: fadeBar2 0.5s;
   animation-fill-mode: forwards;
 }
 
 .animateBar3 {
-  animation: flipBar3 1s;
+  animation: flipBar3 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -230,13 +232,20 @@ body {
   position: fixed;
   z-index: 2;
   top: 0;
-  right: 0;
+  /* Hide mobile drawer hidden to the far right of the document */
+  right: -160px;
   padding: 16px;
+  transition: transform 0.3s;
 }
 
 .mobileNav img {
   width: 24px;
   height: 24px;
+}
+
+/* Make the mobile drawer visible in the document */
+.openDrawer {
+  transform: translateX(-160px);
 }
 
 .mobileNav a {
