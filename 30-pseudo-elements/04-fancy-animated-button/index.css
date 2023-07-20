@@ -1,0 +1,53 @@
+/* Implement a fancy hover animated button */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Define the button styling */
+.btn {
+  padding: 20px 40px;
+  border: 2px solid #e91e63;
+  border-radius: 25px;
+  color: #e91e63;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  /* Hide the overlapping layer defined using the pseudo-element ::before */
+  overflow: hidden;
+  /* Make the color change of the button text smoother */
+  transition: color 0.5s ease;
+}
+
+/* Create a pseudo element prior to the rendering of the element's content */
+.btn::before {
+  content: "";
+  /* Create a box that is exactly as wide & tall as the associated button element */
+  width: 100%;
+  height: 100%;
+  background-color: #e91e63;
+  position: absolute;
+  /* Position to overlaps over the button element */
+  top: 0;
+  left: 0;
+  /* Move the overlap layer to the left */
+  transform: translateX(-100%);
+  /* Make the hovering of the overlap layer smoother */
+  transition: transform 0.5s ease;
+  /* Mpve the overlap layer beneath the button element */
+  z-index: -1;
+}
+
+.btn:hover {
+  /* Change the text color when hovered over */
+  color: white;
+}
+
+.btn:hover::before {
+  /* Move the overlap layer to its original position. hovering over the button eleemnt */
+  transform: translateX(0);
+}
