@@ -43,21 +43,6 @@ body {
   height: 24px;
 }
 
-/* Setup hamburger icon */
-.navbar .hamburger {
-  height: 50px;
-  width: 50px;
-  display: none;
-}
-
-.navbar .bar {
-  background-color: black;
-  height: 4px;
-  width: 36px;
-  margin: 3px;
-  border-radius: 10px;
-}
-
 /* Setup the parent element that holds the <img> element */
 .project {
   /* width: 600px; */
@@ -168,41 +153,37 @@ body {
   padding: 64px;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 1100px) {
-  .project-grid {
-    grid-template-areas:
-      "eth eth"
-      "alphabet traveler"
-      "cube astro"
-      "insta insta"
-      "cup foam"
-      "dimensional dimensional";
-    max-width: 100%;
-  }
-
-  .container {
-    max-width: 100%;
-  }
+/* Hamburger icon UI */
+.navbar .hamburger {
+  height: 50px;
+  width: 50px;
+  display: none;
 }
 
-/* Hamburger Menu Anitmation */
-.hamburger .bar:nth-child(1) {
-  animation: flipBar1 1s infinite;
+.bar1,
+.bar2,
+.bar3 {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+  margin: 3px;
+  border-radius: 10px;
 }
 
-.hamburger .bar:nth-child(2) {
-  animation: fadeBar2 1s infinite;
+/* Hamburger icon anitmation */
+.animateBar1 {
+  animation: flipBar1 1s;
+  animation-fill-mode: forwards;
 }
 
-.hamburger .bar:nth-child(3) {
-  animation: flipBar3 1s infinite;
+.animateBar2 {
+  animation: fadeBar2 1s;
+  animation-fill-mode: forwards;
 }
 
-/* For JavaScript testing ONLY */
-.purple {
-  background-color: purple;
-  transform: scale(2);
+.animateBar3 {
+  animation: flipBar3 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes flipBar1 {
@@ -234,6 +215,24 @@ body {
 
   to {
     transform: rotate(-45deg) translate(4px, -10px);
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1100px) {
+  .project-grid {
+    grid-template-areas:
+      "eth eth"
+      "alphabet traveler"
+      "cube astro"
+      "insta insta"
+      "cup foam"
+      "dimensional dimensional";
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
   }
 }
 
