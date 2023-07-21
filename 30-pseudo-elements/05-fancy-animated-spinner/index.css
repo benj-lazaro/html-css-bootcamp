@@ -1,0 +1,54 @@
+body {
+  /* Enable Flexbox in the document */
+  display: flex;
+  /* Center the Flex item horizontally & vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Define the spinner */
+.spinner {
+  width: 300px;
+  height: 300px;
+  /* Use conic-gradient color for the background of the element */
+  background: conic-gradient(cyan, yellow, magenta, cyan);
+  /* Make it a circle */
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: inset 0px 0px 110px -70px black;
+  position: relative;
+  /* Call the keyframe animation spin */
+  animation: spin 1.5s infinite linear;
+}
+
+/* Use pseudo-element ::after to define an inner white circle in the middle of the spinner */
+.spinner::after {
+  content: "";
+  background-color: white;
+  /* Define the size of the inner white cirle to be 80% of the parent element (.spinner) */
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  /* Position this element relative to its nearest ancestor (.spinner) */
+  position: absolute;
+  /* Center the inner white circle within the spinner */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Define an inner border & box-shadow */
+  border: 4px solid white;
+  box-shadow: inset 0px 0px 110px -70px;
+}
+
+/* Define keyframe animation for spinning */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
