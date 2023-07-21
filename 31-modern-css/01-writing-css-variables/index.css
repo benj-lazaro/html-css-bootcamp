@@ -1,0 +1,33 @@
+/* CSS variables a.k.a CSS custom properties */
+/* Allows to define values that can be re-used over & over again */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) */
+
+/* CSS variables are usually defined at the root level so all elements have access to them */
+/* Create a pseudo selector :root & then declare variable names --<variable_name> */
+/* Access the value using var(--<variable_name>) */
+
+/* NOTE: any valid CSS value can be assigned to a CSS variable */
+
+:root {
+  /* Define CSS variables & assign their corresponding values */
+  --brand-color: rgb(131, 188, 8);
+  --standard-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  /* Access value in variable --brand-color */
+  background-color: var(--brand-color);
+}
+
+h1 {
+  /* Access values in variables --brand-color & --standard-shadow */
+  color: var(--brand-color);
+  display: inline-block;
+  box-shadow: var(--standard-shadow);
+}
+
+div {
+  /* Access values in variables --brand-color & --standard-shadow */
+  border: 3px solid var(--brand-color);
+  box-shadow: var(--standard-shadow);
+}
