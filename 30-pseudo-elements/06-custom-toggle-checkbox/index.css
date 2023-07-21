@@ -1,0 +1,57 @@
+body {
+  /* Enable Flexbox in the document */
+  display: flex;
+  /* Center the Flex item horizontally & vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Hide the <input> element checkbox from the document */
+.toggle {
+  opacity: 0;
+}
+
+.toggle + label {
+  position: relative;
+  padding-left: 5rem;
+}
+
+/* Define a pseudo-element toggle on the adjacent <label> element of the checkbox */
+.toggle + label::before {
+  content: "";
+  background-color: #c6d0cc;
+  width: 4.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Make the change of background color of the toggle smoother */
+  transition: background-color 0.2s;
+}
+
+/* Define a inner white circle inside the toggle */
+.toggle + label::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  /* Make the movement of the inner circle smoother */
+  transition: transform 0.2s;
+}
+
+/* When the checkbox is clicked (checked), style the label */
+.toggle:checked + label::before {
+  background-color: #20b776;
+}
+
+/* Move the inner circle within the toggle to the right */
+.toggle:checked + label::after {
+  transform: translateX(2rem);
+}
