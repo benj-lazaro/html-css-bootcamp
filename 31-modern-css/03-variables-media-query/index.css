@@ -1,0 +1,28 @@
+/* Define global variables */
+:root {
+  --brand-color: rgb(131, 188, 8);
+  --standard-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  background-color: var(--brand-color);
+}
+
+h1 {
+  color: var(--brand-color);
+  display: inline-block;
+  box-shadow: var(--standard-shadow);
+}
+
+div {
+  border: 3px solid var(--brand-color);
+  box-shadow: var(--standard-shadow);
+}
+
+@media screen and (max-width: 800px) {
+  /* Update the global variable with a new value for this screen size */
+  /* This new value will take effect on the rest of the selectors accessing this variable */
+  :root {
+    --brand-color: rgb(161, 30, 197);
+  }
+}
