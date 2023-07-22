@@ -1,0 +1,31 @@
+/* The :root pseudo-class matches the root element of a tree represents the document */
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/:root) */
+
+/* NOTE: the :root specificity provide every CSS selector access to the defined variables */
+/* NOTE: the :root pseudo class == element selector 'html' */
+
+/* Define global variables (custom properties) & assign corresponding values */
+:root {
+  --brand-color: rgb(131, 188, 8);
+  --standard-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  background-color: var(--brand-color);
+}
+
+h1 {
+  /* Create a local-scope variable --brand-color & assign a value */
+  --brand-color: purple;
+  /* Access local-scope variable --brand-color */
+  color: var(--brand-color);
+  display: inline-block;
+  /* Access global-scope variable --standard-shadow */
+  box-shadow: var(--standard-shadow);
+}
+
+div {
+  /* Access global variables --brand-color & --standard-shadow */
+  border: 3px solid var(--brand-color);
+  box-shadow: var(--standard-shadow);
+}
