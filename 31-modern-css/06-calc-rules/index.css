@@ -1,0 +1,21 @@
+/* calc() rules: */
+/* Uses 4 mathematical operations: addition, subtraction, multiplication, division */
+/* Whitespace REQUIRED between operators for addition & subtraction; NOT for multiplication or division */
+/* Dividing by 0 will cause errors */
+/* Can nest calc() functions */
+/* Can use CSS variables with calc() function */
+
+/* NOTE: calc() is often used with relative units (% or rem) and hard-coded units (px) */
+
+:root {
+  --spacing: 10px;
+}
+
+.box1 {
+  background-color: tomato;
+  height: 300px;
+  /* Calculate width property using calc() and CSS variable --spacing */
+  width: calc(var(--spacing) * 20);
+  float: left;
+  margin-right: 20px;
+}
