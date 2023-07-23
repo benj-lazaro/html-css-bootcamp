@@ -1,0 +1,23 @@
+/* calc() allows to make quick math with CSS properties */
+/* Commonly used when needed to create a value using mixed units (i.e. %, rem and px) */
+
+/* Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/calc) */
+
+.box1 {
+  background-color: tomato;
+  height: 300px;
+  /* Set the width to 40% of the parent element */
+  width: 40%;
+  float: left;
+  /* Place a 20px gap between the element on its right-side (i.e. .box2) */
+  margin-right: 20px;
+}
+
+.box2 {
+  background-color: olivedrab;
+  height: 300px;
+  /* Set the width to 60% of the parent element */
+  /* Recalculate width to accomodate .box1's margin-right property of 20px */
+  width: calc(60% - 20px);
+  float: right;
+}
