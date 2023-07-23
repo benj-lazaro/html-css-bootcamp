@@ -1,0 +1,26 @@
+/* Using CSS variables to store size or space-realted information */
+
+/* Define global variables that holds different sizes or space information */
+:root {
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+button {
+  padding: var(--spacing-lg);
+}
+
+/* Redefine local variables based on the device's screen size / resolution */
+@media screen and (max-width: 800px) {
+  button {
+    padding: var(--spacing-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    padding: var(--spacing-sm);
+  }
+}
