@@ -1,0 +1,17 @@
+.box {
+  background-color: cyan;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tinybox {
+  background-color: magenta;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  /* Position nested element using calc() */
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+}
