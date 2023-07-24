@@ -13,6 +13,13 @@
   --h4-size: 32px;
   --h5-size: 28px;
   --h6-size: 22px;
+  --purple-1: #6962f7;
+  --purple-2: #7000ff;
+  --primary-accent: #0a2540;
+}
+
+body {
+  font-family: var(--body-font);
 }
 
 h1 {
@@ -66,4 +73,15 @@ h6 {
   font-weight: 500;
   margin: 0;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--purple-1);
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--primary-accent);
 }
