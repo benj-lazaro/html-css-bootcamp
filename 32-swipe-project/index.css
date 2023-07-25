@@ -71,12 +71,10 @@ h1 {
 
 h2 {
   font-family: var(--heading-font);
-  font-size: var(--h2-size);
-  font-weight: 500;
+  font-size: var(--h3-size);
+  font-weight: 600;
   margin: 0;
   width: 100%;
-  letter-spacing: -0.25px;
-  line-height: var(--h2-height);
 }
 
 h3 {
@@ -271,7 +269,7 @@ p {
   background-color: rgba(250, 250, 250, 0.5);
 }
 
-/* Hero Styles */
+/* Hero Section */
 main {
   margin: var(--spacing-xl) 0;
 }
@@ -313,4 +311,23 @@ main {
 .partners-grid img {
   height: 60px;
   place-self: center; /* Centers the <img> within each Grid cell */
+}
+
+/* Unified Platform Section */
+.unified-platform-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.unified-platform-section h2 {
+  width: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.unified-platform-section .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0;
+}
+
+.unified-platform-section .primary-button:hover {
+  background-color: var(--primary-accent);
 }
