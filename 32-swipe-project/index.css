@@ -1,3 +1,4 @@
+/* Global Variables */
 :root {
   /* Content (Text) Font Family & Color */
   --text-dark: #000;
@@ -42,6 +43,7 @@
   --standard-width: 1144px;
 }
 
+/* Docment Styles */
 body {
   font-family: var(--body-font);
   color: var(--text-dark);
@@ -56,6 +58,7 @@ body {
   align-items: center;
 }
 
+/* Header Styles */
 h1 {
   font-family: var(--heading-font);
   font-size: var(--h1-size);
@@ -109,6 +112,7 @@ h6 {
   width: 100%;
 }
 
+/* Hyperlink Styles */
 a {
   text-decoration: none;
   color: var(--purple-1);
@@ -120,11 +124,47 @@ a:hover {
   color: var(--primary-accent);
 }
 
+/* Paragraph Styles */
 p {
   font-size: var(--p-size);
   font-weight: 400;
   line-height: var(--p-height);
   margin: var(--spacing-md) 0;
+}
+
+/* Layout Styles */
+.section-container {
+  width: 100%;
+  max-width: var(--standard-width);
+}
+
+.two-column {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.two-column > .col-left {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md) 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.two-column > .col-right {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 0 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .subtitle,
