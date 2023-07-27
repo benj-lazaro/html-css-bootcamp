@@ -168,6 +168,27 @@ p {
   align-items: flex-start;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.card .icon {
+  height: 50px;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.card h3 {
+  font-family: var(--heading-font);
+  font-size: var(--h6-size);
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+}
+
 .subtitle,
 .subtitle2 {
   color: var(--purple-1);
