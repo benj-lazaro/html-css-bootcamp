@@ -390,3 +390,43 @@ main {
   width: 100%;
   box-shadow: var(--standard-box-shadow);
 }
+
+/* Integrations Section */
+.integrations-section {
+  color: var(--text-light);
+  background-color: var(--primary-accent);
+}
+
+.integrations-section .primary-button {
+  background-color: var(--blue-1);
+  color: var(--primary-accent);
+  margin: var(--spacing-md) 0 0 0;
+}
+
+.integrations-section .primary-button:hover {
+  background-color: var(--bg-white);
+}
+
+.integrations-section .card-container {
+  display: flex;
+  margin: var(--spacing-lg) 0;
+}
+
+.integrations-section .card-container .card {
+  width: 50%;
+}
+
+.integrations-section .secondary-button {
+  color: var(--blue-1);
+}
+
+#api-code {
+  max-width: 470px;
+  border-radius: 20px;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+#terminal-code {
+  max-width: 470px;
+  border-radius: 20px;
+}
