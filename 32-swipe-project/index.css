@@ -865,6 +865,7 @@ p {
     display: none;
   }
 
+  /* Why Swipe Section */
   .why-swipe-section .card-container .card {
     width: 100%;
     margin: var(--spacing-sm) 0;
