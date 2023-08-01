@@ -260,7 +260,6 @@ p {
 }
 
 /* NAVBAR */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -295,6 +294,10 @@ p {
 
 .navbar-button:hover {
   background: rgba(250, 250, 250, 0.5);
+}
+
+.hamburger-button {
+  display: none;
 }
 
 /* ANIMATED GRADIENT  */
@@ -830,10 +833,40 @@ p {
 
   /* NAVBAR STYLES */
   .navbar {
-    margin: 0;
+    margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .navbar-button {
+    display: none;
+  }
+
+  .hamburger-button {
+    width: 50px;
+    height: 30px;
+    background-color: rgba(250, 250, 250, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-button .bar {
+    width: 18px;
+    height: 2px;
+    background-color: var(--bg-white);
+    margin: 1px 0;
   }
 
   /* HERO STYLES */
+  .navbar {
+    margin: 0;
+  }
+
   #gradient-canvas {
     height: 820px;
   }
