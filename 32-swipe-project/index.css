@@ -269,6 +269,7 @@ p {
   max-width: var(--standard-width);
   padding: 0 var(--spacing-md);
   margin: 0 0 var(--spacing-xl) 0;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -851,6 +852,11 @@ p {
 
   .hero .col-right {
     width: 40%;
+  }
+
+  .hero-phone {
+    height: 450px;
+    transform: translateX(32px);
   }
 
   /* UNIFIED PLATFORM */
